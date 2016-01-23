@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import LogKit
+
+/// Logger for the App instead of print
+let log = LXLogger()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
