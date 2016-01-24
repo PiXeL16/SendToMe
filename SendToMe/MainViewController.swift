@@ -7,9 +7,14 @@
 //
 
 import UIKit
+import IHKeyboardAvoiding
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
+    @IBOutlet weak var stackView: UIStackView!
 
+    @IBOutlet weak var logoImageView: UIImageView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
