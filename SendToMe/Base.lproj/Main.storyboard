@@ -41,11 +41,14 @@
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxy-aZ-ke1">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxy-aZ-ke1" customClass="AnimatableButton" customModule="IBAnimatable">
                                         <rect key="frame" x="0.0" y="34" width="300" height="36"/>
                                         <color key="backgroundColor" red="0.3393560913" green="0.60532159279999997" blue="0.85174231339999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
                                         <state key="normal" title="Save my email "/>
+                                        <connections>
+                                            <action selector="saveEmailClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EIL-WL-3oF"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -74,7 +77,9 @@
                     </view>
                     <connections>
                         <outlet property="IQLayoutGuideConstraint" destination="5fj-cG-Zfw" id="wxy-Gi-GJm"/>
+                        <outlet property="emailTextField" destination="gIs-lV-Raa" id="VAL-JI-9wd"/>
                         <outlet property="logoImageView" destination="Spe-kA-uRM" id="jM9-fo-Swr"/>
+                        <outlet property="saveEmailButton" destination="Rxy-aZ-ke1" id="0Tm-qB-obJ"/>
                         <outlet property="stackView" destination="WaU-kk-62g" id="T04-Li-8ik"/>
                     </connections>
                 </viewController>

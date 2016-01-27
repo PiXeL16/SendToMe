@@ -10,6 +10,8 @@
 		454A9A99D63F4FF221B3CE74 /* Pods_SendToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2005CD4B08FFDFA82008FB /* Pods_SendToMe.framework */; };
 		836A1C751C587D1B00F9034B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C741C587D1B00F9034B /* StringExtension.swift */; };
 		836A1C781C587E1C00F9034B /* StringExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C771C587E1C00F9034B /* StringExtensionSpecs.swift */; };
+		836A1C7B1C58882A00F9034B /* EmailDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C7A1C58882A00F9034B /* EmailDataStorage.swift */; };
+		836A1C7E1C588A7500F9034B /* EmailDataStorageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C7D1C588A7500F9034B /* EmailDataStorageSpecs.swift */; };
 		837E3BDA1C5336E4000A3BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BD91C5336E4000A3BCE /* AppDelegate.swift */; };
 		837E3BDC1C5336E4000A3BCE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BDB1C5336E4000A3BCE /* MainViewController.swift */; };
 		837E3BDF1C5336E4000A3BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E3BDD1C5336E4000A3BCE /* Main.storyboard */; };
@@ -43,9 +45,11 @@
 		4D5BD74D9A7AD3896AA1E85E /* Pods-SendToMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests.debug.xcconfig"; sourceTree = "<group>"; };
 		836A1C741C587D1B00F9034B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		836A1C771C587E1C00F9034B /* StringExtensionSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionSpecs.swift; sourceTree = "<group>"; };
+		836A1C7A1C58882A00F9034B /* EmailDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDataStorage.swift; sourceTree = "<group>"; };
+		836A1C7D1C588A7500F9034B /* EmailDataStorageSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDataStorageSpecs.swift; sourceTree = "<group>"; };
 		837E3BD61C5336E4000A3BCE /* SendToMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendToMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E3BD91C5336E4000A3BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		837E3BDB1C5336E4000A3BCE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		837E3BDB1C5336E4000A3BCE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		837E3BDE1C5336E4000A3BCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		837E3BE01C5336E4000A3BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837E3BE31C5336E4000A3BCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -102,6 +106,7 @@
 		836A1C721C587CB600F9034B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				837E3BDB1C5336E4000A3BCE /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -120,6 +125,22 @@
 				836A1C771C587E1C00F9034B /* StringExtensionSpecs.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		836A1C791C5887DA00F9034B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				836A1C7A1C58882A00F9034B /* EmailDataStorage.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		836A1C7C1C588A6400F9034B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				836A1C7D1C588A7500F9034B /* EmailDataStorageSpecs.swift */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		837E3BCD1C5336E4000A3BCE = {
@@ -147,10 +168,10 @@
 		837E3BD81C5336E4000A3BCE /* SendToMe */ = {
 			isa = PBXGroup;
 			children = (
+				836A1C791C5887DA00F9034B /* Data */,
 				836A1C731C587CBF00F9034B /* Extensions */,
 				836A1C721C587CB600F9034B /* ViewControllers */,
 				837E3BD91C5336E4000A3BCE /* AppDelegate.swift */,
-				837E3BDB1C5336E4000A3BCE /* MainViewController.swift */,
 				837E3BDD1C5336E4000A3BCE /* Main.storyboard */,
 				837E3BE01C5336E4000A3BCE /* Assets.xcassets */,
 				837E3BE21C5336E4000A3BCE /* LaunchScreen.storyboard */,
@@ -162,6 +183,7 @@
 		837E3BED1C5336E4000A3BCE /* SendToMeTests */ = {
 			isa = PBXGroup;
 			children = (
+				836A1C7C1C588A6400F9034B /* Data */,
 				836A1C761C587DBA00F9034B /* Extensions */,
 				837E3BEE1C5336E4000A3BCE /* SendToMeTests.swift */,
 				837E3BF01C5336E4000A3BCE /* Info.plist */,
@@ -417,6 +439,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836A1C7B1C58882A00F9034B /* EmailDataStorage.swift in Sources */,
 				836A1C751C587D1B00F9034B /* StringExtension.swift in Sources */,
 				837E3BDC1C5336E4000A3BCE /* MainViewController.swift in Sources */,
 				837E3BDA1C5336E4000A3BCE /* AppDelegate.swift in Sources */,
@@ -429,6 +452,7 @@
 			files = (
 				837E3BEF1C5336E4000A3BCE /* SendToMeTests.swift in Sources */,
 				836A1C781C587E1C00F9034B /* StringExtensionSpecs.swift in Sources */,
+				836A1C7E1C588A7500F9034B /* EmailDataStorageSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,8 +11,7 @@ import Nimble
 import Quick
 import SendToMe
 
-class StringExtensionSpecs: QuickSpec
-{
+class StringExtensionSpecs: QuickSpec{
     
     override func spec() {
         

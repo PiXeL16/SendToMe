@@ -7,12 +7,16 @@
 //
 
 import UIKit
+import IBAnimatable
 
 class MainViewController: UIViewController {
-    @IBOutlet weak var stackView: UIStackView!
+    @IBOutlet weak var stackView: AnimatableStackView!
 
+    @IBOutlet weak var emailTextField: UITextField!
+    
     @IBOutlet weak var logoImageView: UIImageView!
     
+    @IBOutlet weak var saveEmailButton: AnimatableButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,5 +30,38 @@ class MainViewController: UIViewController {
     }
 
 
+    @IBAction func saveEmailClicked(sender: AnyObject) {
+        
+        if isValid(){
+            
+            self.saveEmailButton.setTitle("Email Saved", forState: UIControlState.Normal)
+            saveEmailButton.zoomIn()
+            
+        }else {
+            
+            //Shakes the stackview to show an error
+            stackView.shake()
+
+        }
+    }
+    
+    /**
+     Check if the form is valid
+     
+     - returns: form is valid
+     */
+    private func isValid() -> Bool{
+        
+        var returnValue = false
+        
+        if emailTextField.text!.isValidEmail()
+        {
+            returnValue = true
+        }
+        
+        return returnValue
+        
+    }
+    
 }
 
