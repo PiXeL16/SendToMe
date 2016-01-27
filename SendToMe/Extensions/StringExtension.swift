@@ -31,7 +31,7 @@ extension String
     
 
     /// Returns the localized string value
-    var localized: String {
+    public var localized: String {
             return NSLocalizedString(self, tableName: nil, bundle: NSBundle.mainBundle(), value: "", comment: "")
     }
     
