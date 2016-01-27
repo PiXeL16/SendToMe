@@ -9,7 +9,7 @@
 import Foundation
 
 /// Simple data storage using NSUserDefault to store the email value set
-public class EmailDataStorage {
+public struct EmailDataStorage {
     
     
     public init(){}
@@ -54,6 +54,8 @@ public class EmailDataStorage {
         defaults.setValue(email, forKey: StorageKeys.emailKey)
         
         defaults.synchronize()
+        
+        log.debug("Email \(email) saved")
     }
     
     
@@ -64,6 +66,8 @@ public class EmailDataStorage {
     {
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.removeObjectForKey(StorageKeys.emailKey)
+        
+        log.debug("Email cleared")
     }
 
 
