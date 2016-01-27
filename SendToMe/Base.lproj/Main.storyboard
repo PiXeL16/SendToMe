@@ -34,25 +34,25 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-kk-62g" customClass="AnimatableStackView" customModule="IBAnimatable">
-                                <rect key="frame" x="150" y="326" width="300" height="70"/>
+                                <rect key="frame" x="160" y="306" width="280" height="70"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIs-lV-Raa">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxy-aZ-ke1" customClass="AnimatableButton" customModule="IBAnimatable">
-                                        <rect key="frame" x="0.0" y="34" width="300" height="36"/>
+                                        <rect key="frame" x="0.0" y="34" width="280" height="36"/>
                                         <color key="backgroundColor" red="0.3393560913" green="0.60532159279999997" blue="0.85174231339999995" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                        <state key="normal" title="Save my email "/>
+                                        <state key="normal" title="Save My email "/>
                                         <connections>
                                             <action selector="saveEmailClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EIL-WL-3oF"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="atW-Rl-rZU"/>
+                                    <constraint firstAttribute="width" constant="280" id="atW-Rl-rZU"/>
                                     <constraint firstAttribute="height" constant="70" id="zCc-5n-Sl6"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
@@ -69,9 +69,7 @@
                                 <variation key="heightClass=compact-widthClass=compact" constant="30"/>
                             </constraint>
                             <constraint firstItem="WaU-kk-62g" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ipf-eH-2BA"/>
-                            <constraint firstItem="WaU-kk-62g" firstAttribute="top" secondItem="Spe-kA-uRM" secondAttribute="bottom" constant="50" id="Vp0-UZ-8pb">
-                                <variation key="widthClass=compact" constant="20"/>
-                            </constraint>
+                            <constraint firstItem="WaU-kk-62g" firstAttribute="top" secondItem="Spe-kA-uRM" secondAttribute="bottom" constant="30" id="Vp0-UZ-8pb"/>
                             <constraint firstItem="Spe-kA-uRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v77-en-bhC"/>
                         </constraints>
                     </view>

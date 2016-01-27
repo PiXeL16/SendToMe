@@ -76,12 +76,15 @@ class MainViewController: UIViewController {
         
         //Shows an initial save animation
         //Sets an email for the delay
-        saveEmailButton.setTitle("Email Saved", forState: UIControlState.Normal)
+        saveEmailButton.setTitle("email_saved".localized, forState: UIControlState.Normal)
         saveEmailButton.zoomIn { () -> Void in
             
            //Sets the button back to normal
-           Delayer.delay(1.0, closure: { () -> () in
-                self.saveEmailButton.setTitle("Save my Email", forState: UIControlState.Normal)
+           Delayer.delay(2.0, closure: { () -> () in
+            
+                self.saveEmailButton.squeezeFadeInRight()
+                self.saveEmailButton.setTitle("save_email_title".localized, forState: UIControlState.Normal)
+            
            })
         }
         
@@ -99,7 +102,7 @@ class MainViewController: UIViewController {
         self.emailTextField.text = ""
         if emailDataStorage.hasEmailSaved
         {
-            emailTextField.placeholder = "Using email \(emailDataStorage.getEmail())"
+            emailTextField.placeholder = String(format: "save_email_text".localized, arguments: [emailDataStorage.getEmail()])
         }
         
     }

@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  SendToMe
+
+  Created by Chris Jimenez on 1/27/16.
+  Copyright © 2016 Chris Jimenez. All rights reserved.
+*/
+
+
+"app_name" = "Send to Me";
+"email_saved" = "Email saved";
+"save_email_title" = "Save My Email";
+"save_email_text" = "Using email %@";

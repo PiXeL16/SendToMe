@@ -28,6 +28,13 @@ extension String
         //Check the value of the string
         return emailTest.evaluateWithObject(self)
     }
+    
+
+    /// Returns the localized string value
+    var localized: String {
+            return NSLocalizedString(self, tableName: nil, bundle: NSBundle.mainBundle(), value: "", comment: "")
+    }
+    
 
 }
 
