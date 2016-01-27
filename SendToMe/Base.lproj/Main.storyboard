@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCircular" translatesAutoresizingMaskIntoConstraints="NO" id="Spe-kA-uRM" customClass="AnimatableImageView" customModule="IBAnimatable">
-                                <rect key="frame" x="195" y="80" width="210" height="196"/>
+                                <rect key="frame" x="210" y="80" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="196" id="6YT-Wt-uCq"/>
-                                    <constraint firstAttribute="width" constant="210" id="qeo-Tt-8JR"/>
+                                    <constraint firstAttribute="height" constant="180" id="6YT-Wt-uCq"/>
+                                    <constraint firstAttribute="width" constant="180" id="qeo-Tt-8JR"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="Pop"/>
@@ -34,12 +34,15 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-kk-62g" customClass="AnimatableStackView" customModule="IBAnimatable">
-                                <rect key="frame" x="160" y="306" width="280" height="70"/>
+                                <rect key="frame" x="160" y="290" width="280" height="70"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIs-lV-Raa">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="BYZ-38-t0r" id="TtS-kv-XTI"/>
+                                        </connections>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxy-aZ-ke1" customClass="AnimatableButton" customModule="IBAnimatable">
                                         <rect key="frame" x="0.0" y="34" width="280" height="36"/>

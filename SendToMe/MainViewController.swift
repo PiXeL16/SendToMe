@@ -9,7 +9,7 @@
 import UIKit
 import IBAnimatable
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var stackView: AnimatableStackView!
 
@@ -105,6 +105,12 @@ class MainViewController: UIViewController {
             emailTextField.placeholder = String(format: "save_email_text".localized, arguments: [emailDataStorage.getEmail()])
         }
         
+    }
+    
+    //Hide the keyboard when done
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
     }
     
 }

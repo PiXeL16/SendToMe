@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send to Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8of-dX-ikS">
-                                <rect key="frame" x="199" y="306" width="203" height="34"/>
+                                <rect key="frame" x="199" y="290" width="203" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="203" id="c47-9p-V1o"/>
                                     <constraint firstAttribute="height" constant="34" id="mft-IT-4a8">
@@ -33,10 +33,10 @@
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCircular" translatesAutoresizingMaskIntoConstraints="NO" id="ERg-Ou-aDU">
-                                <rect key="frame" x="195" y="80" width="210" height="196"/>
+                                <rect key="frame" x="210" y="80" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="196" id="Jrv-hu-zxW"/>
-                                    <constraint firstAttribute="width" constant="210" id="bvG-eM-nUI"/>
+                                    <constraint firstAttribute="height" constant="180" id="Jrv-hu-zxW"/>
+                                    <constraint firstAttribute="width" constant="180" id="bvG-eM-nUI"/>
                                 </constraints>
                             </imageView>
                         </subviews>
