@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import IHKeyboardAvoiding
 
 class MainViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
