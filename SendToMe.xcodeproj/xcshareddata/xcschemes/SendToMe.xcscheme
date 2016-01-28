@@ -49,6 +49,16 @@
                ReferencedContainer = "container:SendToMe.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "836A1CAC1C59CA8E00F9034B"
+               BuildableName = "SendToMeFrameworkTests.xctest"
+               BlueprintName = "SendToMeFrameworkTests"
+               ReferencedContainer = "container:SendToMe.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference

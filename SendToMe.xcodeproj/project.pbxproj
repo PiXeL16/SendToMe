@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		454A9A99D63F4FF221B3CE74 /* Pods_SendToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2005CD4B08FFDFA82008FB /* Pods_SendToMe.framework */; };
+		28679CF29894FE7B0FBEF8A7 /* Pods_SendToMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B396C33D0CA76509DBD7B4FA /* Pods_SendToMeTests.framework */; };
+		69739AD034FC3792910A639E /* Pods_SendToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6426BFF95E5F24F3F021DBC /* Pods_SendToMe.framework */; };
+		78DA7F07E77D5995910EA52F /* Pods_SendToMeShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B94A4B904F14D3E3878AD0F4 /* Pods_SendToMeShareExtension.framework */; };
 		836A1C751C587D1B00F9034B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C741C587D1B00F9034B /* StringExtension.swift */; };
 		836A1C781C587E1C00F9034B /* StringExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C771C587E1C00F9034B /* StringExtensionSpecs.swift */; };
-		836A1C7B1C58882A00F9034B /* EmailDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C7A1C58882A00F9034B /* EmailDataStorage.swift */; };
-		836A1C7E1C588A7500F9034B /* EmailDataStorageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C7D1C588A7500F9034B /* EmailDataStorageSpecs.swift */; };
 		836A1C811C58932800F9034B /* Delayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C801C58932800F9034B /* Delayer.swift */; };
 		836A1C841C5897FF00F9034B /* DelayerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C831C5897FF00F9034B /* DelayerSpecs.swift */; };
 		836A1C871C5899DA00F9034B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 836A1C861C5899DA00F9034B /* Localizable.strings */; };
+		836A1C901C59C11400F9034B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C8F1C59C11400F9034B /* ShareViewController.swift */; };
+		836A1C931C59C11400F9034B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836A1C911C59C11400F9034B /* MainInterface.storyboard */; };
+		836A1C971C59C11400F9034B /* SendToMeShareExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 836A1C8D1C59C11400F9034B /* SendToMeShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		836A1C9D1C59C7ED00F9034B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 836A1C9C1C59C7ED00F9034B /* Media.xcassets */; };
+		836A1C9E1C59C90600F9034B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837E3BE01C5336E4000A3BCE /* Assets.xcassets */; };
+		836A1CA71C59CA8E00F9034B /* SendToMeFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 836A1CA61C59CA8E00F9034B /* SendToMeFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		836A1CAE1C59CA8E00F9034B /* SendToMeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836A1CA41C59CA8E00F9034B /* SendToMeFramework.framework */; };
+		836A1CB51C59CA8E00F9034B /* SendToMeFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CB41C59CA8E00F9034B /* SendToMeFrameworkTests.swift */; };
+		836A1CB91C59CA8E00F9034B /* SendToMeFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 836A1CA41C59CA8E00F9034B /* SendToMeFramework.framework */; };
+		836A1CBA1C59CA8E00F9034B /* SendToMeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 836A1CA41C59CA8E00F9034B /* SendToMeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		836A1CC41C59CB6600F9034B /* EmailDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CC31C59CB6600F9034B /* EmailDataStorage.swift */; };
+		836A1CC71C59CBB500F9034B /* EmailDataStorageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CC61C59CBB500F9034B /* EmailDataStorageSpecs.swift */; };
 		837E3BDA1C5336E4000A3BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BD91C5336E4000A3BCE /* AppDelegate.swift */; };
 		837E3BDC1C5336E4000A3BCE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BDB1C5336E4000A3BCE /* MainViewController.swift */; };
 		837E3BDF1C5336E4000A3BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E3BDD1C5336E4000A3BCE /* Main.storyboard */; };
@@ -22,10 +34,38 @@
 		837E3BE41C5336E4000A3BCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E3BE21C5336E4000A3BCE /* LaunchScreen.storyboard */; };
 		837E3BEF1C5336E4000A3BCE /* SendToMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BEE1C5336E4000A3BCE /* SendToMeTests.swift */; };
 		837E3BFA1C5336E4000A3BCE /* SendToMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BF91C5336E4000A3BCE /* SendToMeUITests.swift */; };
-		8935C9D477CD413AC4658F1E /* Pods_SendToMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AB5FC0B1F2518AA619A555A /* Pods_SendToMeTests.framework */; };
+		F3E5781CAA5FCC64F92717E5 /* Pods_SendToMeFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A17F340A6B1DD2CB8E9BB86F /* Pods_SendToMeFrameworkTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		836A1C951C59C11400F9034B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837E3BCE1C5336E4000A3BCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836A1C8C1C59C11400F9034B;
+			remoteInfo = SendToMeShareExtension;
+		};
+		836A1CAF1C59CA8E00F9034B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837E3BCE1C5336E4000A3BCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836A1CA31C59CA8E00F9034B;
+			remoteInfo = SendToMeFramework;
+		};
+		836A1CB11C59CA8E00F9034B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837E3BCE1C5336E4000A3BCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 837E3BD51C5336E4000A3BCE;
+			remoteInfo = SendToMe;
+		};
+		836A1CB71C59CA8E00F9034B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 837E3BCE1C5336E4000A3BCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 836A1CA31C59CA8E00F9034B;
+			remoteInfo = SendToMeFramework;
+		};
 		837E3BEB1C5336E4000A3BCE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 837E3BCE1C5336E4000A3BCE /* Project object */;
@@ -42,17 +82,54 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		836A1C9B1C59C11400F9034B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				836A1C971C59C11400F9034B /* SendToMeShareExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836A1CBE1C59CA8F00F9034B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				836A1CBA1C59CA8E00F9034B /* SendToMeFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		0A2005CD4B08FFDFA82008FB /* Pods_SendToMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendToMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2013049B3D3B5CB689F4F349 /* Pods-SendToMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMe/Pods-SendToMe.debug.xcconfig"; sourceTree = "<group>"; };
-		4D5BD74D9A7AD3896AA1E85E /* Pods-SendToMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		434E833C499C8E782F313AD0 /* Pods-SendToMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7BA9ED71B0A6A98B94BE8C88 /* Pods-SendToMeShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeShareExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeShareExtension/Pods-SendToMeShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 		836A1C741C587D1B00F9034B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		836A1C771C587E1C00F9034B /* StringExtensionSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionSpecs.swift; sourceTree = "<group>"; };
-		836A1C7A1C58882A00F9034B /* EmailDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDataStorage.swift; sourceTree = "<group>"; };
-		836A1C7D1C588A7500F9034B /* EmailDataStorageSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDataStorageSpecs.swift; sourceTree = "<group>"; };
 		836A1C801C58932800F9034B /* Delayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delayer.swift; sourceTree = "<group>"; };
 		836A1C831C5897FF00F9034B /* DelayerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayerSpecs.swift; sourceTree = "<group>"; };
 		836A1C861C5899DA00F9034B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		836A1C8D1C59C11400F9034B /* SendToMeShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SendToMeShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		836A1C8F1C59C11400F9034B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		836A1C921C59C11400F9034B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		836A1C941C59C11400F9034B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836A1C9C1C59C7ED00F9034B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		836A1CA41C59CA8E00F9034B /* SendToMeFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SendToMeFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		836A1CA61C59CA8E00F9034B /* SendToMeFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SendToMeFramework.h; sourceTree = "<group>"; };
+		836A1CA81C59CA8E00F9034B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836A1CAD1C59CA8E00F9034B /* SendToMeFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendToMeFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		836A1CB41C59CA8E00F9034B /* SendToMeFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendToMeFrameworkTests.swift; sourceTree = "<group>"; };
+		836A1CB61C59CA8E00F9034B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		836A1CC31C59CB6600F9034B /* EmailDataStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDataStorage.swift; sourceTree = "<group>"; };
+		836A1CC61C59CBB500F9034B /* EmailDataStorageSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDataStorageSpecs.swift; sourceTree = "<group>"; };
+		836A1CC81C59CE8000F9034B /* SendToMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SendToMe.entitlements; sourceTree = "<group>"; };
+		836A1CC91C59CF5C00F9034B /* SendToMeShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SendToMeShareExtension.entitlements; sourceTree = "<group>"; };
 		837E3BD61C5336E4000A3BCE /* SendToMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendToMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E3BD91C5336E4000A3BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837E3BDB1C5336E4000A3BCE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
@@ -66,17 +143,49 @@
 		837E3BF51C5336E4000A3BCE /* SendToMeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SendToMeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E3BF91C5336E4000A3BCE /* SendToMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendToMeUITests.swift; sourceTree = "<group>"; };
 		837E3BFB1C5336E4000A3BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8AB5FC0B1F2518AA619A555A /* Pods_SendToMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendToMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A79ECD6CE5D110DCCF4F169E /* Pods-SendToMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMe/Pods-SendToMe.release.xcconfig"; sourceTree = "<group>"; };
-		B959775F4C91AB5455AED14B /* Pods-SendToMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		9B154284DF841E8D884A660B /* Pods-SendToMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMe/Pods-SendToMe.release.xcconfig"; sourceTree = "<group>"; };
+		A17F340A6B1DD2CB8E9BB86F /* Pods_SendToMeFrameworkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendToMeFrameworkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6426BFF95E5F24F3F021DBC /* Pods_SendToMe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendToMe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A64C08A8BAF28B2F73432900 /* Pods-SendToMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests.release.xcconfig"; sourceTree = "<group>"; };
+		B396C33D0CA76509DBD7B4FA /* Pods_SendToMeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendToMeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B94A4B904F14D3E3878AD0F4 /* Pods_SendToMeShareExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SendToMeShareExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7740F8A9C44F34800AB8010 /* Pods-SendToMeFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeFrameworkTests/Pods-SendToMeFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB0C5487183B16FF43E51C35 /* Pods-SendToMe.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMe.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMe/Pods-SendToMe.debug.xcconfig"; sourceTree = "<group>"; };
+		CC87210C670EEF1AA4D9D570 /* Pods-SendToMeShareExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeShareExtension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeShareExtension/Pods-SendToMeShareExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		F7F98481C33B895BB8239235 /* Pods-SendToMeFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeFrameworkTests/Pods-SendToMeFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		836A1C8A1C59C11400F9034B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78DA7F07E77D5995910EA52F /* Pods_SendToMeShareExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836A1CA01C59CA8E00F9034B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836A1CAA1C59CA8E00F9034B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836A1CAE1C59CA8E00F9034B /* SendToMeFramework.framework in Frameworks */,
+				F3E5781CAA5FCC64F92717E5 /* Pods_SendToMeFrameworkTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		837E3BD31C5336E4000A3BCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				454A9A99D63F4FF221B3CE74 /* Pods_SendToMe.framework in Frameworks */,
+				836A1CB91C59CA8E00F9034B /* SendToMeFramework.framework in Frameworks */,
+				69739AD034FC3792910A639E /* Pods_SendToMe.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +193,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8935C9D477CD413AC4658F1E /* Pods_SendToMeTests.framework in Frameworks */,
+				28679CF29894FE7B0FBEF8A7 /* Pods_SendToMeTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,17 +207,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		51A46BB0A44621560A8086E2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2013049B3D3B5CB689F4F349 /* Pods-SendToMe.debug.xcconfig */,
-				A79ECD6CE5D110DCCF4F169E /* Pods-SendToMe.release.xcconfig */,
-				4D5BD74D9A7AD3896AA1E85E /* Pods-SendToMeTests.debug.xcconfig */,
-				B959775F4C91AB5455AED14B /* Pods-SendToMeTests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		836A1C721C587CB600F9034B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,22 +229,6 @@
 				836A1C771C587E1C00F9034B /* StringExtensionSpecs.swift */,
 			);
 			name = Extensions;
-			sourceTree = "<group>";
-		};
-		836A1C791C5887DA00F9034B /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				836A1C7A1C58882A00F9034B /* EmailDataStorage.swift */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		836A1C7C1C588A6400F9034B /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				836A1C7D1C588A7500F9034B /* EmailDataStorageSpecs.swift */,
-			);
-			name = Data;
 			sourceTree = "<group>";
 		};
 		836A1C7F1C58931F00F9034B /* Util */ = {
@@ -174,15 +256,73 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		836A1C881C59C08A00F9034B /* ShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShareExtension;
+			sourceTree = "<group>";
+		};
+		836A1C8E1C59C11400F9034B /* SendToMeShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				836A1CC91C59CF5C00F9034B /* SendToMeShareExtension.entitlements */,
+				836A1C8F1C59C11400F9034B /* ShareViewController.swift */,
+				836A1C911C59C11400F9034B /* MainInterface.storyboard */,
+				836A1C941C59C11400F9034B /* Info.plist */,
+				836A1C9C1C59C7ED00F9034B /* Media.xcassets */,
+			);
+			path = SendToMeShareExtension;
+			sourceTree = "<group>";
+		};
+		836A1CA51C59CA8E00F9034B /* SendToMeFramework */ = {
+			isa = PBXGroup;
+			children = (
+				836A1CC21C59CB4A00F9034B /* Data */,
+				836A1CA61C59CA8E00F9034B /* SendToMeFramework.h */,
+				836A1CA81C59CA8E00F9034B /* Info.plist */,
+			);
+			path = SendToMeFramework;
+			sourceTree = "<group>";
+		};
+		836A1CB31C59CA8E00F9034B /* SendToMeFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				836A1CC51C59CB9F00F9034B /* Data */,
+				836A1CB41C59CA8E00F9034B /* SendToMeFrameworkTests.swift */,
+				836A1CB61C59CA8E00F9034B /* Info.plist */,
+			);
+			path = SendToMeFrameworkTests;
+			sourceTree = "<group>";
+		};
+		836A1CC21C59CB4A00F9034B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				836A1CC31C59CB6600F9034B /* EmailDataStorage.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		836A1CC51C59CB9F00F9034B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				836A1CC61C59CBB500F9034B /* EmailDataStorageSpecs.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
 		837E3BCD1C5336E4000A3BCE = {
 			isa = PBXGroup;
 			children = (
 				837E3BD81C5336E4000A3BCE /* SendToMe */,
 				837E3BED1C5336E4000A3BCE /* SendToMeTests */,
 				837E3BF81C5336E4000A3BCE /* SendToMeUITests */,
+				836A1C8E1C59C11400F9034B /* SendToMeShareExtension */,
+				836A1CA51C59CA8E00F9034B /* SendToMeFramework */,
+				836A1CB31C59CA8E00F9034B /* SendToMeFrameworkTests */,
 				837E3BD71C5336E4000A3BCE /* Products */,
-				BF8CE78BFE1BD4CA082ACD18 /* Frameworks */,
-				51A46BB0A44621560A8086E2 /* Pods */,
+				FEA94DA46CA12B6CB445B8A6 /* Pods */,
+				C4D6951F7790BDB6BC5CD19C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -192,6 +332,9 @@
 				837E3BD61C5336E4000A3BCE /* SendToMe.app */,
 				837E3BEA1C5336E4000A3BCE /* SendToMeTests.xctest */,
 				837E3BF51C5336E4000A3BCE /* SendToMeUITests.xctest */,
+				836A1C8D1C59C11400F9034B /* SendToMeShareExtension.appex */,
+				836A1CA41C59CA8E00F9034B /* SendToMeFramework.framework */,
+				836A1CAD1C59CA8E00F9034B /* SendToMeFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,9 +342,10 @@
 		837E3BD81C5336E4000A3BCE /* SendToMe */ = {
 			isa = PBXGroup;
 			children = (
+				836A1CC81C59CE8000F9034B /* SendToMe.entitlements */,
+				836A1C881C59C08A00F9034B /* ShareExtension */,
 				836A1C851C58994600F9034B /* Supporting Files */,
 				836A1C7F1C58931F00F9034B /* Util */,
-				836A1C791C5887DA00F9034B /* Data */,
 				836A1C731C587CBF00F9034B /* Extensions */,
 				836A1C721C587CB600F9034B /* ViewControllers */,
 				837E3BDD1C5336E4000A3BCE /* Main.storyboard */,
@@ -216,7 +360,6 @@
 			isa = PBXGroup;
 			children = (
 				836A1C821C5897EF00F9034B /* Util */,
-				836A1C7C1C588A6400F9034B /* Data */,
 				836A1C761C587DBA00F9034B /* Extensions */,
 				837E3BEE1C5336E4000A3BCE /* SendToMeTests.swift */,
 				837E3BF01C5336E4000A3BCE /* Info.plist */,
@@ -233,32 +376,124 @@
 			path = SendToMeUITests;
 			sourceTree = "<group>";
 		};
-		BF8CE78BFE1BD4CA082ACD18 /* Frameworks */ = {
+		C4D6951F7790BDB6BC5CD19C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0A2005CD4B08FFDFA82008FB /* Pods_SendToMe.framework */,
-				8AB5FC0B1F2518AA619A555A /* Pods_SendToMeTests.framework */,
+				A6426BFF95E5F24F3F021DBC /* Pods_SendToMe.framework */,
+				B94A4B904F14D3E3878AD0F4 /* Pods_SendToMeShareExtension.framework */,
+				B396C33D0CA76509DBD7B4FA /* Pods_SendToMeTests.framework */,
+				A17F340A6B1DD2CB8E9BB86F /* Pods_SendToMeFrameworkTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FEA94DA46CA12B6CB445B8A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB0C5487183B16FF43E51C35 /* Pods-SendToMe.debug.xcconfig */,
+				9B154284DF841E8D884A660B /* Pods-SendToMe.release.xcconfig */,
+				CC87210C670EEF1AA4D9D570 /* Pods-SendToMeShareExtension.debug.xcconfig */,
+				7BA9ED71B0A6A98B94BE8C88 /* Pods-SendToMeShareExtension.release.xcconfig */,
+				434E833C499C8E782F313AD0 /* Pods-SendToMeTests.debug.xcconfig */,
+				A64C08A8BAF28B2F73432900 /* Pods-SendToMeTests.release.xcconfig */,
+				C7740F8A9C44F34800AB8010 /* Pods-SendToMeFrameworkTests.debug.xcconfig */,
+				F7F98481C33B895BB8239235 /* Pods-SendToMeFrameworkTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		836A1CA11C59CA8E00F9034B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836A1CA71C59CA8E00F9034B /* SendToMeFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		837E3BD51C5336E4000A3BCE /* SendToMe */ = {
+		836A1C8C1C59C11400F9034B /* SendToMeShareExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 837E3BFE1C5336E4000A3BCE /* Build configuration list for PBXNativeTarget "SendToMe" */;
+			buildConfigurationList = 836A1C981C59C11400F9034B /* Build configuration list for PBXNativeTarget "SendToMeShareExtension" */;
 			buildPhases = (
-				58671B3F9185E95C1C6A93F7 /* Check Pods Manifest.lock */,
-				837E3BD21C5336E4000A3BCE /* Sources */,
-				837E3BD31C5336E4000A3BCE /* Frameworks */,
-				837E3BD41C5336E4000A3BCE /* Resources */,
-				FF4E75C78D4804905455B29B /* Embed Pods Frameworks */,
-				3C64C9DC951639535B9EB57E /* Copy Pods Resources */,
+				AD43E9058D5A24096D955580 /* Check Pods Manifest.lock */,
+				836A1C891C59C11400F9034B /* Sources */,
+				836A1C8A1C59C11400F9034B /* Frameworks */,
+				836A1C8B1C59C11400F9034B /* Resources */,
+				6D75CBC9F7F4E11A23C21954 /* Embed Pods Frameworks */,
+				DDE2CE8C98DBDD58BCC7184F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			name = SendToMeShareExtension;
+			productName = SendToMeShareExtension;
+			productReference = 836A1C8D1C59C11400F9034B /* SendToMeShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		836A1CA31C59CA8E00F9034B /* SendToMeFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836A1CBB1C59CA8F00F9034B /* Build configuration list for PBXNativeTarget "SendToMeFramework" */;
+			buildPhases = (
+				836A1C9F1C59CA8E00F9034B /* Sources */,
+				836A1CA01C59CA8E00F9034B /* Frameworks */,
+				836A1CA11C59CA8E00F9034B /* Headers */,
+				836A1CA21C59CA8E00F9034B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SendToMeFramework;
+			productName = SendToMeFramework;
+			productReference = 836A1CA41C59CA8E00F9034B /* SendToMeFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		836A1CAC1C59CA8E00F9034B /* SendToMeFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 836A1CBF1C59CA8F00F9034B /* Build configuration list for PBXNativeTarget "SendToMeFrameworkTests" */;
+			buildPhases = (
+				882CB8F1C2A1A605BEE43E09 /* Check Pods Manifest.lock */,
+				836A1CA91C59CA8E00F9034B /* Sources */,
+				836A1CAA1C59CA8E00F9034B /* Frameworks */,
+				836A1CAB1C59CA8E00F9034B /* Resources */,
+				C00E022460B3DAE1D5DC0966 /* Embed Pods Frameworks */,
+				C2FF8272A0670628AE3BAC47 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				836A1CB01C59CA8E00F9034B /* PBXTargetDependency */,
+				836A1CB21C59CA8E00F9034B /* PBXTargetDependency */,
+			);
+			name = SendToMeFrameworkTests;
+			productName = SendToMeFrameworkTests;
+			productReference = 836A1CAD1C59CA8E00F9034B /* SendToMeFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		837E3BD51C5336E4000A3BCE /* SendToMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 837E3BFE1C5336E4000A3BCE /* Build configuration list for PBXNativeTarget "SendToMe" */;
+			buildPhases = (
+				09F5ECB8DC8E0F2AED99AEE5 /* Check Pods Manifest.lock */,
+				837E3BD21C5336E4000A3BCE /* Sources */,
+				837E3BD31C5336E4000A3BCE /* Frameworks */,
+				837E3BD41C5336E4000A3BCE /* Resources */,
+				836A1C9B1C59C11400F9034B /* Embed App Extensions */,
+				AD4E09C2355AF3DF82C3BCCA /* Embed Pods Frameworks */,
+				CE23A8C25F71DD51ABC099C3 /* Copy Pods Resources */,
+				836A1CBE1C59CA8F00F9034B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				836A1C961C59C11400F9034B /* PBXTargetDependency */,
+				836A1CB81C59CA8E00F9034B /* PBXTargetDependency */,
 			);
 			name = SendToMe;
 			productName = SendToMe;
@@ -269,12 +504,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837E3C011C5336E4000A3BCE /* Build configuration list for PBXNativeTarget "SendToMeTests" */;
 			buildPhases = (
-				233B0722F413AF87EB2EBB45 /* Check Pods Manifest.lock */,
+				A9128EB1A7EA7BD15C3E02D6 /* Check Pods Manifest.lock */,
 				837E3BE61C5336E4000A3BCE /* Sources */,
 				837E3BE71C5336E4000A3BCE /* Frameworks */,
 				837E3BE81C5336E4000A3BCE /* Resources */,
-				13A50EF43BDFEF8D3F0D0BAF /* Embed Pods Frameworks */,
-				53283E46A9BE1A069F6A322E /* Copy Pods Resources */,
+				75D51AAC3D0D3707D1668DA2 /* Embed Pods Frameworks */,
+				5ABEAC06EFD06160DC945BF7 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,8 +549,30 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Chris Jimenez";
 				TargetAttributes = {
+					836A1C8C1C59C11400F9034B = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7JMURSKQQ8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					836A1CA31C59CA8E00F9034B = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					836A1CAC1C59CA8E00F9034B = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 837E3BD51C5336E4000A3BCE;
+					};
 					837E3BD51C5336E4000A3BCE = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7JMURSKQQ8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					837E3BE91C5336E4000A3BCE = {
 						CreatedOnToolsVersion = 7.2;
@@ -343,11 +600,38 @@
 				837E3BD51C5336E4000A3BCE /* SendToMe */,
 				837E3BE91C5336E4000A3BCE /* SendToMeTests */,
 				837E3BF41C5336E4000A3BCE /* SendToMeUITests */,
+				836A1C8C1C59C11400F9034B /* SendToMeShareExtension */,
+				836A1CA31C59CA8E00F9034B /* SendToMeFramework */,
+				836A1CAC1C59CA8E00F9034B /* SendToMeFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		836A1C8B1C59C11400F9034B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836A1C9D1C59C7ED00F9034B /* Media.xcassets in Resources */,
+				836A1C9E1C59C90600F9034B /* Assets.xcassets in Resources */,
+				836A1C931C59C11400F9034B /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836A1CA21C59CA8E00F9034B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836A1CAB1C59CA8E00F9034B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		837E3BD41C5336E4000A3BCE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -376,22 +660,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		13A50EF43BDFEF8D3F0D0BAF /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		233B0722F413AF87EB2EBB45 /* Check Pods Manifest.lock */ = {
+		09F5ECB8DC8E0F2AED99AEE5 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -406,22 +675,7 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		3C64C9DC951639535B9EB57E /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMe/Pods-SendToMe-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		53283E46A9BE1A069F6A322E /* Copy Pods Resources */ = {
+		5ABEAC06EFD06160DC945BF7 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -436,7 +690,37 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		58671B3F9185E95C1C6A93F7 /* Check Pods Manifest.lock */ = {
+		6D75CBC9F7F4E11A23C21954 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMeShareExtension/Pods-SendToMeShareExtension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75D51AAC3D0D3707D1668DA2 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		882CB8F1C2A1A605BEE43E09 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -451,7 +735,37 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		FF4E75C78D4804905455B29B /* Embed Pods Frameworks */ = {
+		A9128EB1A7EA7BD15C3E02D6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD43E9058D5A24096D955580 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AD4E09C2355AF3DF82C3BCCA /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -466,15 +780,99 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMe/Pods-SendToMe-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		C00E022460B3DAE1D5DC0966 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMeFrameworkTests/Pods-SendToMeFrameworkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2FF8272A0670628AE3BAC47 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMeFrameworkTests/Pods-SendToMeFrameworkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE23A8C25F71DD51ABC099C3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMe/Pods-SendToMe-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDE2CE8C98DBDD58BCC7184F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMeShareExtension/Pods-SendToMeShareExtension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		836A1C891C59C11400F9034B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836A1C901C59C11400F9034B /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836A1C9F1C59CA8E00F9034B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836A1CC41C59CB6600F9034B /* EmailDataStorage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		836A1CA91C59CA8E00F9034B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				836A1CB51C59CA8E00F9034B /* SendToMeFrameworkTests.swift in Sources */,
+				836A1CC71C59CBB500F9034B /* EmailDataStorageSpecs.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		837E3BD21C5336E4000A3BCE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				836A1C811C58932800F9034B /* Delayer.swift in Sources */,
-				836A1C7B1C58882A00F9034B /* EmailDataStorage.swift in Sources */,
 				836A1C751C587D1B00F9034B /* StringExtension.swift in Sources */,
 				837E3BDC1C5336E4000A3BCE /* MainViewController.swift in Sources */,
 				837E3BDA1C5336E4000A3BCE /* AppDelegate.swift in Sources */,
@@ -488,7 +886,6 @@
 				837E3BEF1C5336E4000A3BCE /* SendToMeTests.swift in Sources */,
 				836A1C841C5897FF00F9034B /* DelayerSpecs.swift in Sources */,
 				836A1C781C587E1C00F9034B /* StringExtensionSpecs.swift in Sources */,
-				836A1C7E1C588A7500F9034B /* EmailDataStorageSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,6 +900,26 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		836A1C961C59C11400F9034B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836A1C8C1C59C11400F9034B /* SendToMeShareExtension */;
+			targetProxy = 836A1C951C59C11400F9034B /* PBXContainerItemProxy */;
+		};
+		836A1CB01C59CA8E00F9034B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836A1CA31C59CA8E00F9034B /* SendToMeFramework */;
+			targetProxy = 836A1CAF1C59CA8E00F9034B /* PBXContainerItemProxy */;
+		};
+		836A1CB21C59CA8E00F9034B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 837E3BD51C5336E4000A3BCE /* SendToMe */;
+			targetProxy = 836A1CB11C59CA8E00F9034B /* PBXContainerItemProxy */;
+		};
+		836A1CB81C59CA8E00F9034B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 836A1CA31C59CA8E00F9034B /* SendToMeFramework */;
+			targetProxy = 836A1CB71C59CA8E00F9034B /* PBXContainerItemProxy */;
+		};
 		837E3BEC1C5336E4000A3BCE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 837E3BD51C5336E4000A3BCE /* SendToMe */;
@@ -516,6 +933,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		836A1C911C59C11400F9034B /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				836A1C921C59C11400F9034B /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		837E3BDD1C5336E4000A3BCE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -535,6 +960,105 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		836A1C991C59C11400F9034B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC87210C670EEF1AA4D9D570 /* Pods-SendToMeShareExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SendToMeShareExtension/SendToMeShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SendToMeShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtome.SendToMeShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		836A1C9A1C59C11400F9034B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BA9ED71B0A6A98B94BE8C88 /* Pods-SendToMeShareExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SendToMeShareExtension/SendToMeShareExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = SendToMeShareExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtome.SendToMeShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		836A1CBC1C59CA8F00F9034B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SendToMeFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.SendToMeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		836A1CBD1C59CA8F00F9034B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SendToMeFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.SendToMeFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		836A1CC01C59CA8F00F9034B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7740F8A9C44F34800AB8010 /* Pods-SendToMeFrameworkTests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SendToMeFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.SendToMeFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SendToMe.app/SendToMe";
+			};
+			name = Debug;
+		};
+		836A1CC11C59CA8F00F9034B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7F98481C33B895BB8239235 /* Pods-SendToMeFrameworkTests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = SendToMeFrameworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.SendToMeFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SendToMe.app/SendToMe";
+			};
+			name = Release;
+		};
 		837E3BFC1C5336E4000A3BCE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -620,31 +1144,41 @@
 		};
 		837E3BFF1C5336E4000A3BCE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2013049B3D3B5CB689F4F349 /* Pods-SendToMe.debug.xcconfig */;
+			baseConfigurationReference = CB0C5487183B16FF43E51C35 /* Pods-SendToMe.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SendToMe/SendToMe.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SendToMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		837E3C001C5336E4000A3BCE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A79ECD6CE5D110DCCF4F169E /* Pods-SendToMe.release.xcconfig */;
+			baseConfigurationReference = 9B154284DF841E8D884A660B /* Pods-SendToMe.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SendToMe/SendToMe.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SendToMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		837E3C021C5336E4000A3BCE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4D5BD74D9A7AD3896AA1E85E /* Pods-SendToMeTests.debug.xcconfig */;
+			baseConfigurationReference = 434E833C499C8E782F313AD0 /* Pods-SendToMeTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SendToMeTests/Info.plist;
@@ -657,7 +1191,7 @@
 		};
 		837E3C031C5336E4000A3BCE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B959775F4C91AB5455AED14B /* Pods-SendToMeTests.release.xcconfig */;
+			baseConfigurationReference = A64C08A8BAF28B2F73432900 /* Pods-SendToMeTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = SendToMeTests/Info.plist;
@@ -695,6 +1229,33 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		836A1C981C59C11400F9034B /* Build configuration list for PBXNativeTarget "SendToMeShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836A1C991C59C11400F9034B /* Debug */,
+				836A1C9A1C59C11400F9034B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836A1CBB1C59CA8F00F9034B /* Build configuration list for PBXNativeTarget "SendToMeFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836A1CBC1C59CA8F00F9034B /* Debug */,
+				836A1CBD1C59CA8F00F9034B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		836A1CBF1C59CA8F00F9034B /* Build configuration list for PBXNativeTarget "SendToMeFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				836A1CC01C59CA8F00F9034B /* Debug */,
+				836A1CC11C59CA8F00F9034B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		837E3BD11C5336E4000A3BCE /* Build configuration list for PBXProject "SendToMe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

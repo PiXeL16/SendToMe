@@ -11,6 +11,7 @@ import Foundation
 /// Simple data storage using NSUserDefault to store the email value set
 public struct EmailDataStorage {
     
+    let defaults = NSUserDefaults.init(suiteName: "group.com.greenpixels.sendtome")
     
     public init(){}
     
@@ -32,11 +33,10 @@ public struct EmailDataStorage {
      - returns: <#return value description#>
      */
     public func getEmail() -> String{
-       
-        let defaults = NSUserDefaults.standardUserDefaults()
+        
         var emailValue = ""
-        if let email = defaults.stringForKey(StorageKeys.emailKey) {
-           emailValue = email
+        if let email = defaults?.stringForKey(StorageKeys.emailKey) {
+            emailValue = email
         }
         return emailValue
     }
@@ -50,12 +50,11 @@ public struct EmailDataStorage {
      */
     public func saveEmail(email:String){
         
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.setValue(email, forKey: StorageKeys.emailKey)
+        defaults?.setValue(email, forKey: StorageKeys.emailKey)
         
-        defaults.synchronize()
+        defaults?.synchronize()
         
-        log.debug("Email \(email) saved")
+        print("Email \(email) saved")
     }
     
     
@@ -64,13 +63,10 @@ public struct EmailDataStorage {
      */
     public func clearEmail()
     {
-        let defaults = NSUserDefaults.standardUserDefaults()
-        defaults.removeObjectForKey(StorageKeys.emailKey)
-        
-        log.debug("Email cleared")
-    }
-
-
     
-
+        defaults?.removeObjectForKey(StorageKeys.emailKey)
+        
+        print("Email cleared")
+    }
+    
 }

@@ -9,9 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>SendToMeFramework.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>13</integer>
+		</dict>
+		<key>SendToMeShareExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>836A1C8C1C59C11400F9034B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>836A1CA31C59CA8E00F9034B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>836A1CAC1C59CA8E00F9034B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>837E3BD51C5336E4000A3BCE</key>
 		<dict>
 			<key>primary</key>

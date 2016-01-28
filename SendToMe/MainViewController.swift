@@ -8,6 +8,7 @@
 
 import UIKit
 import IBAnimatable
+import SendToMeFramework
 
 class MainViewController: UIViewController, UITextFieldDelegate {
     

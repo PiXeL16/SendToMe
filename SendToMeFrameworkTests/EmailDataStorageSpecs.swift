@@ -30,18 +30,18 @@ class EmailDataStorageSpecs: QuickSpec {
         }
         
         it("clear saved email succesfuly")
-        {
-            
-            emailStorage.saveEmail(email)
-            
-            expect(emailStorage.hasEmailSaved).to(beTruthy())
-            
-            emailStorage.clearEmail()
-            
-            expect(emailStorage.hasEmailSaved).to(beFalsy())
+            {
+                
+                emailStorage.saveEmail(email)
+                
+                expect(emailStorage.hasEmailSaved).to(beTruthy())
+                
+                emailStorage.clearEmail()
+                
+                expect(emailStorage.hasEmailSaved).to(beFalsy())
         }
         
         
     }
-
+    
 }
