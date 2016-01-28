@@ -27,6 +27,7 @@
 		836A1CBA1C59CA8E00F9034B /* SendToMeFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 836A1CA41C59CA8E00F9034B /* SendToMeFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		836A1CC41C59CB6600F9034B /* EmailDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CC31C59CB6600F9034B /* EmailDataStorage.swift */; };
 		836A1CC71C59CBB500F9034B /* EmailDataStorageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CC61C59CBB500F9034B /* EmailDataStorageSpecs.swift */; };
+		836A1CD01C59EC8D00F9034B /* JavascriptPreProcessor.js in Resources */ = {isa = PBXBuildFile; fileRef = 836A1CCF1C59EC8D00F9034B /* JavascriptPreProcessor.js */; };
 		837E3BDA1C5336E4000A3BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BD91C5336E4000A3BCE /* AppDelegate.swift */; };
 		837E3BDC1C5336E4000A3BCE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BDB1C5336E4000A3BCE /* MainViewController.swift */; };
 		837E3BDF1C5336E4000A3BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E3BDD1C5336E4000A3BCE /* Main.storyboard */; };
@@ -130,6 +131,7 @@
 		836A1CC61C59CBB500F9034B /* EmailDataStorageSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailDataStorageSpecs.swift; sourceTree = "<group>"; };
 		836A1CC81C59CE8000F9034B /* SendToMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SendToMe.entitlements; sourceTree = "<group>"; };
 		836A1CC91C59CF5C00F9034B /* SendToMeShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SendToMeShareExtension.entitlements; sourceTree = "<group>"; };
+		836A1CCF1C59EC8D00F9034B /* JavascriptPreProcessor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JavascriptPreProcessor.js; sourceTree = "<group>"; };
 		837E3BD61C5336E4000A3BCE /* SendToMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendToMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E3BD91C5336E4000A3BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837E3BDB1C5336E4000A3BCE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
@@ -266,6 +268,7 @@
 		836A1C8E1C59C11400F9034B /* SendToMeShareExtension */ = {
 			isa = PBXGroup;
 			children = (
+				836A1CCA1C59EB6400F9034B /* JavascriptPreprocessing */,
 				836A1CC91C59CF5C00F9034B /* SendToMeShareExtension.entitlements */,
 				836A1C8F1C59C11400F9034B /* ShareViewController.swift */,
 				836A1C911C59C11400F9034B /* MainInterface.storyboard */,
@@ -309,6 +312,14 @@
 				836A1CC61C59CBB500F9034B /* EmailDataStorageSpecs.swift */,
 			);
 			name = Data;
+			sourceTree = "<group>";
+		};
+		836A1CCA1C59EB6400F9034B /* JavascriptPreprocessing */ = {
+			isa = PBXGroup;
+			children = (
+				836A1CCF1C59EC8D00F9034B /* JavascriptPreProcessor.js */,
+			);
+			name = JavascriptPreprocessing;
 			sourceTree = "<group>";
 		};
 		837E3BCD1C5336E4000A3BCE = {
@@ -614,6 +625,7 @@
 			files = (
 				836A1C9D1C59C7ED00F9034B /* Media.xcassets in Resources */,
 				836A1C9E1C59C90600F9034B /* Assets.xcassets in Resources */,
+				836A1CD01C59EC8D00F9034B /* JavascriptPreProcessor.js in Resources */,
 				836A1C931C59C11400F9034B /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

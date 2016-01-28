@@ -9,7 +9,7 @@
 import Foundation
 import Nimble
 import Quick
-import SendToMe
+import SendToMeFramework
 
 class EmailDataStorageSpecs: QuickSpec {
     
