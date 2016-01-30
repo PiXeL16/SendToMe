@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  SendToMe
+
+  Created by Chris Jimenez on 1/30/16.
+  Copyright © 2016 Chris Jimenez. All rights reserved.
+*/
+
+"app_name" = "Send to Me";
+"email_saved_error" = "Please save your email first in the App before sharing.";
+"data_extraction_error" = "Unable to get data to share";
+

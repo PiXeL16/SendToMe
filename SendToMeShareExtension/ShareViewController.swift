@@ -22,13 +22,32 @@ class ShareViewController: SLComposeServiceViewController {
         super.viewDidLoad()
         
         self.title  = "Send to Me"
+      
+        self.loadPreviewView()
+        
+        
+        
+    }
+    
+    override func loadView(){
+        
+        super.loadView()
+        
+        //Sets the textview placeholder
+        self.placeholder = "Add a comment to your email"
+        
+        //Clear the default sharing text
+        self.textView.text = ""
+        //Hacking way of making the textview think we did a backspace so it shows the placeholder, for seome reason it wont show with out this
+        self.textView.replaceRange(self.textView.selectedTextRange!, withText: "")
+        
         
     }
     override func viewDidAppear(animated: Bool) {
         
         super.viewDidAppear(animated)
         
-        // Reset Post button text.
+        // Reset Post button text. //Kind of ugly...
         for item in (self.navigationController?.navigationBar.items)! {
             if let rightItem = item.rightBarButtonItem {
                 rightItem.title = "Send"
@@ -41,49 +60,59 @@ class ShareViewController: SLComposeServiceViewController {
 
     override func didSelectPost() {
         
-
         
-//        if let item = extensionContext?.inputItems.first as? NSExtensionItem {
-//            if let itemProvider = item.attachments?.first as? NSItemProvider {
-//                if itemProvider.hasItemConformingToTypeIdentifier("public.url") {
-//                    itemProvider.loadItemForTypeIdentifier("public.url", options: nil, completionHandler: { (url, error) -> Void in
-//                        if let shareURL = url as? NSURL {
-//                            
-//                            print(shareURL)
-//                            // send url to server to share the link
-//                        }
-////                        self.extensionContext?.completeRequestReturningItems([], completionHandler:nil)
-//                    })
-//                }
-//            }
-//        }
+        let emailDataStorage = EmailDataStorage()
+        
+        guard emailDataStorage.hasEmailSaved else
+        {
+           exitWithErrorAndShowMessage ("email_saved_error".localized)
+           return
+        }
         
         if let item = extensionContext?.inputItems.first as? NSExtensionItem {
-            if let itemProvider = item.attachments?.first as? NSItemProvider {
-                let propertyList = String(kUTTypePropertyList)
-                if itemProvider.hasItemConformingToTypeIdentifier(propertyList) {
-                    
-                    itemProvider.loadItemForTypeIdentifier(propertyList, options: nil, completionHandler: { (item, error) -> Void in
-                                        let dictionary = item as! NSDictionary
-                                        NSOperationQueue.mainQueue().addOperationWithBlock {
-                                            let results = dictionary[NSExtensionJavaScriptPreprocessingResultsKey] as! NSDictionary
-                                            let titleString = results["title"] as? String
-                                            let urlString = results["currentUrl"] as? String
-                                            
-                                            print(titleString)
-                                            print(urlString)
-                                            
-                                        }
-                                    })
-                }
+            
+            let contentExtractor = ShareContentExtractor()
+            
+            do
+            {
+                try contentExtractor.extractContentFromNSExtensionItem(item){ shareContent in
                 
+                    if let shareContent = shareContent
+                    {
+                        
+                        print(shareContent)
+                        
+                         self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+                        
+                    }else
+                    {
+                        self.exitWithErrorAndShowMessage ("data_extraction_error".localized)
+                       
+                        
+                    }
+                }
+            }catch
+            {
+                self.exitWithErrorAndShowMessage ("data_extraction_error".localized)
             }
-        }
 
-        // This is called after the user selects Post. Do the upload of contentText and/or NSExtensionContext attachments.
+        }
+        
+        super.didSelectPost()
+    }
     
-        // Inform the host that we're done, so it un-blocks its UI. Note: Alternatively you could call super's -didSelectPost, which will similarly complete the extension context.
-        self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+    /**
+     Exit an show error message
+     
+     - parameter message: error message to show
+     */
+    func exitWithErrorAndShowMessage(message:String)
+    {
+        
+        let alert = UIAlertController(title: "Send to Me", message:message, preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (action: UIAlertAction!) -> () in self.extensionContext!.cancelRequestWithError(NSError(domain: message, code: 0, userInfo: nil)) }))
+        self.presentViewController(alert, animated: true, completion: nil)
+        
     }
 
     override func configurationItems() -> [AnyObject]! {

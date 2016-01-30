@@ -9,7 +9,7 @@
 import Foundation
 import Nimble
 import Quick
-import SendToMe
+import SendToMeFramework
 
 class StringExtensionSpecs: QuickSpec{
     
@@ -22,22 +22,21 @@ class StringExtensionSpecs: QuickSpec{
             expect(email.isValidEmail()).to(beTruthy())
         }
         
-        it("email is invalid")
-        {
-            let email:String = "test.com"
+        it("email is invalid"){
             
-            expect(email.isValidEmail()).to(beFalse())
+                let email:String = "test.com"
+                
+                expect(email.isValidEmail()).to(beFalse())
                 
         }
         
-        it("text is correctly localized")
-        {
-            let text = "app_name".localized
+        it("text is correctly localized"){
             
-            expect(text).to(equal("Send to Me"))
+            
+                let text = "app_name".localized
+                
+                expect(text).to(equal("Send to Me"))
         }
         
     }
-    
-    
 }

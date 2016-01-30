@@ -29,12 +29,12 @@ extension String
         return emailTest.evaluateWithObject(self)
     }
     
-
+    
     /// Returns the localized string value
     public var localized: String {
-            return NSLocalizedString(self, tableName: nil, bundle: NSBundle.mainBundle(), value: "", comment: "")
+        return NSLocalizedString(self, tableName: nil, bundle: NSBundle.mainBundle(), value: "", comment: "")
     }
     
-
+    
 }
 
