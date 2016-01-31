@@ -22,11 +22,7 @@ class ShareViewController: SLComposeServiceViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title  = "Send to Me"
-      
-        self.loadPreviewView()
-        
-        
+        self.title  = "app_name".localized
         
     }
     
@@ -35,8 +31,7 @@ class ShareViewController: SLComposeServiceViewController {
         super.loadView()
         
         //Sets the textview placeholder
-        self.placeholder = "Add a comment to your email"
-        
+        self.placeholder = "add_comment".localized
         //Clear the default sharing text
         self.textView.text = ""
         //Hacking way of making the textview think we did a backspace so it shows the placeholder, for seome reason it wont show with out this

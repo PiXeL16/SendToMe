@@ -9,4 +9,5 @@
 "app_name" = "Send to Me";
 "email_saved_error" = "Please save your email first in the App before sharing.";
 "data_extraction_error" = "Unable to get data to share";
+"add_comment" = "Add a comment?";
 

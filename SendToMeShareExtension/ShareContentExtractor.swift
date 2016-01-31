@@ -40,6 +40,15 @@ public class ShareContentExtractor{
                 
                  return extractPublicUrl(itemProvider, completionHandler: completionHandler)
             }
+            else if itemProvider.hasItemConformingToTypeIdentifier("public.file-url") {
+                
+                return extractPublicFileUrl(itemProvider, completionHandler: completionHandler)
+            }
+            else if itemProvider.hasItemConformingToTypeIdentifier("public.plain-text") {
+                
+                return extractPublicPlainText(itemProvider, completionHandler: completionHandler)
+            }
+            
             else
             {
                 throw ExtractorError.NoContent
@@ -99,6 +108,50 @@ public class ShareContentExtractor{
             else
             {
                  return completionHandler(nil)
+            }
+        })
+    }
+    
+    
+    /**
+     Extract the public url of an item provider
+     
+     - parameter itemProvider:      itemProvider with the url content
+     - parameter completionHandler: completion handler
+     */
+    public func extractPublicFileUrl(itemProvider:NSItemProvider, completionHandler:(ShareContent?) -> Void) -> Void
+    {
+        itemProvider.loadItemForTypeIdentifier("public.file-url", options: nil, completionHandler: { (url, error) -> Void in
+            if let shareURL = url as? NSURL {
+                
+                let urlString = shareURL.absoluteString
+                
+                let shareContent = ShareContent(title:nil, url: urlString)
+                
+                return completionHandler(shareContent)
+                
+            }
+            else
+            {
+                return completionHandler(nil)
+            }
+        })
+    }
+    
+    public func extractPublicPlainText(itemProvider:NSItemProvider, completionHandler:(ShareContent?) -> Void) -> Void
+    {
+        itemProvider.loadItemForTypeIdentifier("public.plain-text", options: nil, completionHandler: { (decoder, error) -> Void in
+            
+            if let string = decoder as? String {
+                
+                let shareContent = ShareContent(title:nil, url: string)
+                
+                return completionHandler(shareContent)
+                
+            }
+            else
+            {
+                return completionHandler(nil)
             }
         })
     }
