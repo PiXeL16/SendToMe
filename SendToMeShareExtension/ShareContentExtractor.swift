@@ -70,8 +70,7 @@ public class ShareContentExtractor{
                     let shareContent = ShareContent(title:titleString, url: urlString)
                     
                     return completionHandler(shareContent)
-                }else
-                {
+                }else{
                     return completionHandler(nil)
                 }
             }

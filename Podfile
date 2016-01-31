@@ -21,7 +21,7 @@ target 'SendToMeUITests' do
 end
 
 target 'SendToMeFramework' do
-    
+
 end
 
 target 'SendToMeFrameworkTests' do
@@ -31,3 +31,12 @@ end
 target 'SendToMeShareExtension' do
     pod 'SwiftMandrill', '~> 1.0.1'
 end
+
+
+plugin 'cocoapods-keys', {
+    :project => "SendToMe",
+    :target => "SendToMeFramework",
+    :keys => [
+        "mandrill_api",
+        "from_email_address"
+    ]}

@@ -10,6 +10,7 @@ import UIKit
 import Social
 import SendToMeFramework
 import MobileCoreServices
+import SwiftMandrill
 
 class ShareViewController: SLComposeServiceViewController {
 
@@ -62,6 +63,8 @@ class ShareViewController: SLComposeServiceViewController {
         
         
         let emailDataStorage = EmailDataStorage()
+        let comment = self.textView.text
+        
         
         guard emailDataStorage.hasEmailSaved else
         {
@@ -79,16 +82,27 @@ class ShareViewController: SLComposeServiceViewController {
                 
                     if let shareContent = shareContent
                     {
+                        let emailObject = EmailBuilder.buildEmailWithSharingContent(shareContent, comment: comment)
                         
-                        print(shareContent)
                         
-                         self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+                        //Send Email with the email subject information
                         
-                    }else
-                    {
+                        let mandrillApi = MandrillAPI(ApiKey: Keys.mandrill_api_key)
+                        
+                        mandrillApi.sendEmail(withEmail: emailObject){
+                            mandrillResult in
+                            
+                            //Complete the dialog
+                            self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+                            
+                            super.didSelectPost()
+                                
+                        }
+                        
+                        
+                
+                    }else{
                         self.exitWithErrorAndShowMessage ("data_extraction_error".localized)
-                       
-                        
                     }
                 }
             }catch
@@ -98,7 +112,7 @@ class ShareViewController: SLComposeServiceViewController {
 
         }
         
-        super.didSelectPost()
+        
     }
     
     /**
@@ -112,6 +126,18 @@ class ShareViewController: SLComposeServiceViewController {
         let alert = UIAlertController(title: "Send to Me", message:message, preferredStyle: .Alert)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: { (action: UIAlertAction!) -> () in self.extensionContext!.cancelRequestWithError(NSError(domain: message, code: 0, userInfo: nil)) }))
         self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
+    /**
+     Send the email with the sharing content to the service
+     
+     - parameter shareContent: share content with the info
+     */
+    func sendEmailWithShareContent(shareContent:ShareContent)
+    
+    {
+        
         
     }
 
