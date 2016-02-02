@@ -31,8 +31,7 @@ class StringExtensionSpecs: QuickSpec{
         }
         
         it("text is correctly localized"){
-            
-            
+        
                 let text = "app_name".localized
                 
                 expect(text).to(equal("Send to Me"))

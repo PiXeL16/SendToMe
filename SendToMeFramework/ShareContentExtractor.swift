@@ -12,12 +12,21 @@ import MobileCoreServices
 //Class in charge of extracting content of URL and pages using the extensionContext inputItems
 public class ShareContentExtractor{
     
+    public enum ExtractionTypes:String{
+        
+        case PublicURL = "public.url"
+        case PublicFileURL = "public.file-url"
+        case PublicPlainText = "public.plain-text"
+    }
+    
     
     //Error Type
-    enum ExtractorError:ErrorType{
+    public enum ExtractorError:ErrorType{
         case NoContent
         case ExtractionError(description:String)
     }
+    
+    public init(){}
     
     /**
      Extract the content from a ExtentionItem
@@ -36,19 +45,19 @@ public class ShareContentExtractor{
                 return extractPropertyList(itemProvider, completionHandler: completionHandler)
                 
             }
-            else if itemProvider.hasItemConformingToTypeIdentifier("public.url") {
+            else if itemProvider.hasItemConformingToTypeIdentifier(ExtractionTypes.PublicURL.rawValue) {
                 
-                 return extractPublicUrl(itemProvider, completionHandler: completionHandler)
+                return extractPublicUrl(itemProvider, completionHandler: completionHandler)
             }
-            else if itemProvider.hasItemConformingToTypeIdentifier("public.file-url") {
+            else if itemProvider.hasItemConformingToTypeIdentifier(ExtractionTypes.PublicFileURL.rawValue) {
                 
                 return extractPublicFileUrl(itemProvider, completionHandler: completionHandler)
             }
-            else if itemProvider.hasItemConformingToTypeIdentifier("public.plain-text") {
+            else if itemProvider.hasItemConformingToTypeIdentifier(ExtractionTypes.PublicPlainText.rawValue) {
                 
                 return extractPublicPlainText(itemProvider, completionHandler: completionHandler)
             }
-            
+                
             else
             {
                 throw ExtractorError.NoContent
@@ -95,7 +104,7 @@ public class ShareContentExtractor{
      */
     public func extractPublicUrl(itemProvider:NSItemProvider, completionHandler:(ShareContent?) -> Void) -> Void
     {
-        itemProvider.loadItemForTypeIdentifier("public.url", options: nil, completionHandler: { (url, error) -> Void in
+        itemProvider.loadItemForTypeIdentifier(ExtractionTypes.PublicURL.rawValue, options: nil, completionHandler: { (url, error) -> Void in
             if let shareURL = url as? NSURL {
                 
                 let urlString = shareURL.absoluteString
@@ -107,7 +116,7 @@ public class ShareContentExtractor{
             }
             else
             {
-                 return completionHandler(nil)
+                return completionHandler(nil)
             }
         })
     }
@@ -121,7 +130,7 @@ public class ShareContentExtractor{
      */
     public func extractPublicFileUrl(itemProvider:NSItemProvider, completionHandler:(ShareContent?) -> Void) -> Void
     {
-        itemProvider.loadItemForTypeIdentifier("public.file-url", options: nil, completionHandler: { (url, error) -> Void in
+        itemProvider.loadItemForTypeIdentifier(ExtractionTypes.PublicFileURL.rawValue, options: nil, completionHandler: { (url, error) -> Void in
             if let shareURL = url as? NSURL {
                 
                 let urlString = shareURL.absoluteString
@@ -140,7 +149,7 @@ public class ShareContentExtractor{
     
     public func extractPublicPlainText(itemProvider:NSItemProvider, completionHandler:(ShareContent?) -> Void) -> Void
     {
-        itemProvider.loadItemForTypeIdentifier("public.plain-text", options: nil, completionHandler: { (decoder, error) -> Void in
+        itemProvider.loadItemForTypeIdentifier(ExtractionTypes.PublicPlainText.rawValue, options: nil, completionHandler: { (decoder, error) -> Void in
             
             if let string = decoder as? String {
                 

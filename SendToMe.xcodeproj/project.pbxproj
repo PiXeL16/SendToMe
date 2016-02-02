@@ -24,8 +24,6 @@
 		836A1CC41C59CB6600F9034B /* EmailDataStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CC31C59CB6600F9034B /* EmailDataStorage.swift */; };
 		836A1CC71C59CBB500F9034B /* EmailDataStorageSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CC61C59CBB500F9034B /* EmailDataStorageSpecs.swift */; };
 		836A1CD01C59EC8D00F9034B /* JavascriptPreProcessor.js in Resources */ = {isa = PBXBuildFile; fileRef = 836A1CCF1C59EC8D00F9034B /* JavascriptPreProcessor.js */; };
-		836A1CD21C5D60EA00F9034B /* ShareContentExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CD11C5D60EA00F9034B /* ShareContentExtractor.swift */; };
-		836A1CD41C5D616100F9034B /* ShareContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CD31C5D616100F9034B /* ShareContent.swift */; };
 		836A1CD61C5D7A0A00F9034B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 836A1CD51C5D7A0A00F9034B /* Localizable.strings */; };
 		836A1CDA1C5D7ACC00F9034B /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CD91C5D7ACC00F9034B /* StringExtension.swift */; };
 		836A1CDC1C5D7AF600F9034B /* StringExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CDB1C5D7AF600F9034B /* StringExtensionSpecs.swift */; };
@@ -39,6 +37,9 @@
 		837E3BFA1C5336E4000A3BCE /* SendToMeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BF91C5336E4000A3BCE /* SendToMeUITests.swift */; };
 		838739BC5117722552DC19B4 /* Pods_SendToMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FA85D1EEF9BEF8AB41C8B1 /* Pods_SendToMeTests.framework */; };
 		83AF6BAE1C5E9D4E0002C364 /* Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AF6BAD1C5E9D4E0002C364 /* Keys.swift */; };
+		83B5055A1C6047210055342D /* ShareContentExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B505591C6047210055342D /* ShareContentExtractor.swift */; };
+		83B5055C1C6047390055342D /* ShareContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5055B1C6047390055342D /* ShareContent.swift */; };
+		83B5055F1C6049940055342D /* ShareContentExtractorSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B5055E1C6049940055342D /* ShareContentExtractorSpecs.swift */; };
 		AB24DCEA30E62176056DD81D /* Pods_SendToMeShareExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 390510495D382A3875911ED3 /* Pods_SendToMeShareExtension.framework */; };
 		D9FE7D8C7E6A2F47EED5F91C /* Pods_SendToMeFrameworkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4EC2B4346DF3FB9D264717 /* Pods_SendToMeFrameworkTests.framework */; };
 /* End PBXBuildFile section */
@@ -139,8 +140,6 @@
 		836A1CC81C59CE8000F9034B /* SendToMe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SendToMe.entitlements; sourceTree = "<group>"; };
 		836A1CC91C59CF5C00F9034B /* SendToMeShareExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SendToMeShareExtension.entitlements; sourceTree = "<group>"; };
 		836A1CCF1C59EC8D00F9034B /* JavascriptPreProcessor.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JavascriptPreProcessor.js; sourceTree = "<group>"; };
-		836A1CD11C5D60EA00F9034B /* ShareContentExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareContentExtractor.swift; sourceTree = "<group>"; };
-		836A1CD31C5D616100F9034B /* ShareContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareContent.swift; sourceTree = "<group>"; };
 		836A1CD51C5D7A0A00F9034B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		836A1CD91C5D7ACC00F9034B /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		836A1CDB1C5D7AF600F9034B /* StringExtensionSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionSpecs.swift; sourceTree = "<group>"; };
@@ -159,6 +158,9 @@
 		837E3BF91C5336E4000A3BCE /* SendToMeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendToMeUITests.swift; sourceTree = "<group>"; };
 		837E3BFB1C5336E4000A3BCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		83AF6BAD1C5E9D4E0002C364 /* Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Keys.swift; sourceTree = "<group>"; };
+		83B505591C6047210055342D /* ShareContentExtractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareContentExtractor.swift; sourceTree = "<group>"; };
+		83B5055B1C6047390055342D /* ShareContent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareContent.swift; sourceTree = "<group>"; };
+		83B5055E1C6049940055342D /* ShareContentExtractorSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareContentExtractorSpecs.swift; sourceTree = "<group>"; };
 		944ED3584B4610E710F76F40 /* Pods-SendToMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests.release.xcconfig"; sourceTree = "<group>"; };
 		A2534C522ADF559C58CF3A9A /* Pods-SendToMeShareExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeShareExtension.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeShareExtension/Pods-SendToMeShareExtension.release.xcconfig"; sourceTree = "<group>"; };
 		B62C414C2812D4B3E5AF1F23 /* Pods-SendToMeFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeFrameworkTests/Pods-SendToMeFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -275,8 +277,6 @@
 				836A1C8F1C59C11400F9034B /* ShareViewController.swift */,
 				836A1C911C59C11400F9034B /* MainInterface.storyboard */,
 				836A1C9C1C59C7ED00F9034B /* Media.xcassets */,
-				836A1CD11C5D60EA00F9034B /* ShareContentExtractor.swift */,
-				836A1CD31C5D616100F9034B /* ShareContent.swift */,
 				836A1CDE1C5D7CB100F9034B /* EmailBuilder.swift */,
 				83AF6BAD1C5E9D4E0002C364 /* Keys.swift */,
 			);
@@ -286,6 +286,7 @@
 		836A1CA51C59CA8E00F9034B /* SendToMeFramework */ = {
 			isa = PBXGroup;
 			children = (
+				83B505581C60470F0055342D /* ShareContentExtractor */,
 				836A1CD81C5D7AB300F9034B /* Extensions */,
 				836A1CC21C59CB4A00F9034B /* Data */,
 				836A1CA61C59CA8E00F9034B /* SendToMeFramework.h */,
@@ -296,6 +297,7 @@
 		836A1CB31C59CA8E00F9034B /* SendToMeFrameworkTests */ = {
 			isa = PBXGroup;
 			children = (
+				83B5055D1C60497C0055342D /* ShareContentExtractor */,
 				836A1CD71C5D7A9200F9034B /* Extensions */,
 				836A1CC51C59CB9F00F9034B /* Data */,
 				836A1CB41C59CA8E00F9034B /* SendToMeFrameworkTests.swift */,
@@ -413,6 +415,23 @@
 				837E3BFB1C5336E4000A3BCE /* Info.plist */,
 			);
 			path = SendToMeUITests;
+			sourceTree = "<group>";
+		};
+		83B505581C60470F0055342D /* ShareContentExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				83B505591C6047210055342D /* ShareContentExtractor.swift */,
+				83B5055B1C6047390055342D /* ShareContent.swift */,
+			);
+			name = ShareContentExtractor;
+			sourceTree = "<group>";
+		};
+		83B5055D1C60497C0055342D /* ShareContentExtractor */ = {
+			isa = PBXGroup;
+			children = (
+				83B5055E1C6049940055342D /* ShareContentExtractorSpecs.swift */,
+			);
+			name = ShareContentExtractor;
 			sourceTree = "<group>";
 		};
 		C795890168ED85D6785570A1 /* Frameworks */ = {
@@ -874,8 +893,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				836A1CDF1C5D7CB100F9034B /* EmailBuilder.swift in Sources */,
-				836A1CD21C5D60EA00F9034B /* ShareContentExtractor.swift in Sources */,
-				836A1CD41C5D616100F9034B /* ShareContent.swift in Sources */,
 				836A1C901C59C11400F9034B /* ShareViewController.swift in Sources */,
 				83AF6BAE1C5E9D4E0002C364 /* Keys.swift in Sources */,
 			);
@@ -885,8 +902,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83B5055A1C6047210055342D /* ShareContentExtractor.swift in Sources */,
 				836A1CDA1C5D7ACC00F9034B /* StringExtension.swift in Sources */,
 				836A1CC41C59CB6600F9034B /* EmailDataStorage.swift in Sources */,
+				83B5055C1C6047390055342D /* ShareContent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -895,6 +914,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				836A1CB51C59CA8E00F9034B /* SendToMeFrameworkTests.swift in Sources */,
+				83B5055F1C6049940055342D /* ShareContentExtractorSpecs.swift in Sources */,
 				836A1CC71C59CBB500F9034B /* EmailDataStorageSpecs.swift in Sources */,
 				836A1CDC1C5D7AF600F9034B /* StringExtensionSpecs.swift in Sources */,
 			);

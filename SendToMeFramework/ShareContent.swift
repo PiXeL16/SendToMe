@@ -8,13 +8,13 @@
 
 import Foundation
 
-//Class that will contain information about the sharing content
+//Share content with the information to share of the content
 public struct ShareContent {
     
     //Title of the URL to share
-    let title:String?
+    public let title:String?
     //URL to share
-    let url:String?
+    public let url:String?
     
     public init(title:String?, url:String?)
     {

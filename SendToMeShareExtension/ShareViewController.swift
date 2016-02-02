@@ -75,30 +75,8 @@ class ShareViewController: SLComposeServiceViewController {
             {
                 try contentExtractor.extractContentFromNSExtensionItem(item){ shareContent in
                 
-                    if let shareContent = shareContent
-                    {
-                        let emailObject = EmailBuilder.buildEmailWithSharingContent(shareContent, comment: comment)
-                        
-                        
-                        //Send Email with the email subject information
-                        
-                        let mandrillApi = MandrillAPI(ApiKey: Keys.mandrill_api_key)
-                        
-                        mandrillApi.sendEmail(withEmail: emailObject){
-                            mandrillResult in
-                            
-                            //Complete the dialog
-                            self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
-                            
-                            super.didSelectPost()
-                                
-                        }
-                        
-                        
-                
-                    }else{
-                        self.exitWithErrorAndShowMessage ("data_extraction_error".localized)
-                    }
+                    self.sendEmailWithShareContent(shareContent,comment: comment)
+                    
                 }
             }catch
             {
@@ -129,9 +107,34 @@ class ShareViewController: SLComposeServiceViewController {
      
      - parameter shareContent: share content with the info
      */
-    func sendEmailWithShareContent(shareContent:ShareContent)
+    func sendEmailWithShareContent(shareContent:ShareContent?,comment:String)
     
     {
+        
+        if let shareContent = shareContent
+        {
+            let emailObject = EmailBuilder.buildEmailWithSharingContent(shareContent, comment: comment)
+            
+            
+            //Send Email with the email subject information
+            
+            let mandrillApi = MandrillAPI(ApiKey: Keys.mandrill_api_key)
+            
+            mandrillApi.sendEmail(withEmail: emailObject){
+                mandrillResult in
+                
+                //Complete the dialog
+                self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)
+                
+                super.didSelectPost()
+                
+            }
+            
+            
+            
+        }else{
+            self.exitWithErrorAndShowMessage ("data_extraction_error".localized)
+        }
         
         
     }
