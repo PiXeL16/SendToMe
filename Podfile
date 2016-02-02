@@ -40,6 +40,6 @@ plugin 'cocoapods-keys', {
     :project => "SendToMe",
     :target => "SendToMeShareExtension",
     :keys => [
-        "mandrill_api",
+        "mandrill_api_key",
         "from_email_address"
     ]}
