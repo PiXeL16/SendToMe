@@ -46,5 +46,5 @@ It will install the dependencies and also ask for two keys
 ## TODO
 * Improve extension unit test(Apple does not have unit testing for extensions yet...)
 
-## About
+## Author
 Chris Jimenez - http://chrisjimenez.net, [@chrisjimeneznat](http://twitter.com/chrisjimeneznat)
