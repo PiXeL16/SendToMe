@@ -38,8 +38,9 @@
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIs-lV-Raa">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emailTextField"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="emailAddress" returnKeyType="done"/>
                                         <connections>
                                             <outlet property="delegate" destination="BYZ-38-t0r" id="TtS-kv-XTI"/>
                                         </connections>
@@ -47,8 +48,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rxy-aZ-ke1" customClass="AnimatableButton" customModule="IBAnimatable">
                                         <rect key="frame" x="0.0" y="34" width="280" height="36"/>
                                         <color key="backgroundColor" red="0.3393560913" green="0.60532159279999997" blue="0.85174231339999995" alpha="1" colorSpace="calibratedRGB"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="saveEmailButton"/>
                                         <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="18"/>
-                                        <state key="normal" title="Save My email "/>
+                                        <state key="normal" title="Save my email "/>
                                         <connections>
                                             <action selector="saveEmailClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EIL-WL-3oF"/>
                                         </connections>
