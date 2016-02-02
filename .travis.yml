@@ -6,7 +6,7 @@ env:
   - LANG=en_US.UTF-8
 before_install:
   - sudo gem install cocoapods-keys
-  - pod keys set mandrill_api $MandrillApiKey
+  - pod keys set mandrill_api_key $MandrillApiKey
   - pod keys set from_email_address $FromEmailAddress
 script:
   - set -o pipefail
