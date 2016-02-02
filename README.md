@@ -1,9 +1,9 @@
-<img src="Web/SendToMeIcon.png" width="200">
+![SendToMeBanner](web/SendToMeBanner.png)
 
 # Send To Me
 Share content to your email with a single tap.
 
-Send to me let you easily share send content with your email with a `Share Extension`
+`Send to Me` let you easily share content with your email with a `Share Extension`
 
 ## Why?
 I personally use my email to handle my `TODO`. If I find something interesting that I want to read later, I send an email about it. It goes into my `TODO` for the next day and I read it.
