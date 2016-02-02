@@ -1,4 +1,4 @@
-![SendToMeBanner](web/SendToMeBanner.png)
+![SendToMeBanner](/Web/SendToMeBanner.png)
 
 # Send To Me
 Share content to your email with a single tap.
