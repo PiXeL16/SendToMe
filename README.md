@@ -1,4 +1,6 @@
 ![SendToMeBanner](/Web/SendToMeBanner.png)
+[![Build Status](https://travis-ci.org/PiXeL16/SendToMe.svg?branch=master)](https://travis-ci.org/PiXeL16/SendToMe/) [![codecov.io](https://codecov.io/github/PiXeL16/SendToMe/coverage.svg?branch=master)](https://codecov.io/github/PiXeL16/SendToMe?branch=master) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/PiXeL16/SendToMe/master/LICENSE)
+[![Twitter](https://img.shields.io/twitter/url/https/github.com/PiXeL16/SendToMe.svg?style=social)](https://twitter.com/intent/tweet?text=Wow:&url=%5Bobject%20Object%5D)
 
 # Send To Me
 Share content to your email with a single tap.
