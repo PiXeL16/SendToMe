@@ -11,6 +11,7 @@ For me, also, something in my email has more presence that something in a random
 
 Yes I know that there is such things like `Pocket` or `Safari Reading List` but I don't use them for reasons...(Like for example that I don't use `Safari` as my main browser at my computer).
 
+
 <img src="Web/IphoneSideSplash.png" height="500">
 
 ## Requirements
