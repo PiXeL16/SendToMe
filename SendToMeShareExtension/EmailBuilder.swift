@@ -35,9 +35,7 @@ public class EmailBuilder
         }
         else if let comment = comment where !comment.isEmpty
         {
-           
-                emailSubject = comment
-            
+            emailSubject = comment
         }
         
         let mandrillTo = MandrillTo(email: emailDataStorage.getEmail())
