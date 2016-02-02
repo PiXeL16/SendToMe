@@ -44,7 +44,8 @@ public class EmailBuilder
         emailObject.subject = emailSubject
         emailObject.from = Keys.from_email
         emailObject.fromName = "app_name".localized
-        emailObject.html = "\(comment!)</br>\(sharingContent.url!)"
+        emailObject.html = "<i>\(comment!)</i></br>\(sharingContent.url!)"
+        emailObject.text = "\(comment!)\n\(sharingContent.url!)"
         
         return emailObject
     }
