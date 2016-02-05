@@ -44,6 +44,7 @@ It will install the dependencies and also ask for two keys
 * [LogKit](https://cocoapods.org/pods/LogKit)
 * [IQKeyboardManagerSwift](https://github.com/hackiftekhar/IQKeyboardManager)
 * [SwiftMandrill](https://github.com/PiXeL16/SwiftMandrill)
+* [SwiftDelayer](https://github.com/PiXeL16/SwiftDelayer)
 * [Quick & Nimble](https://github.com/Quick/Nimble)
 
 ## TODO
