@@ -82,7 +82,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         saveEmailButton.zoomIn { () -> Void in
             
            //Sets the button back to normal
-           Delayer.delay(2.0){
+            Delayer.delayOnMainQueue(seconds:2.0){
             
                 self.saveEmailButton.squeezeFadeInRight()
                 self.saveEmailButton.setTitle("save_email_title".localized, forState: UIControlState.Normal)
