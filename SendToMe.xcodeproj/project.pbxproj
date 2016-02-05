@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4563F560AF37972E62B48840 /* Pods_SendToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 456A476DF3E1B89524A0972A /* Pods_SendToMe.framework */; };
-		836A1C811C58932800F9034B /* Delayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C801C58932800F9034B /* Delayer.swift */; };
-		836A1C841C5897FF00F9034B /* DelayerSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C831C5897FF00F9034B /* DelayerSpecs.swift */; };
 		836A1C871C5899DA00F9034B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 836A1C861C5899DA00F9034B /* Localizable.strings */; };
 		836A1C901C59C11400F9034B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C8F1C59C11400F9034B /* ShareViewController.swift */; };
 		836A1C931C59C11400F9034B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836A1C911C59C11400F9034B /* MainInterface.storyboard */; };
@@ -122,8 +120,6 @@
 		664E6BA37D6AB3DFEA3B7965 /* Pods-SendToMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMe/Pods-SendToMe.release.xcconfig"; sourceTree = "<group>"; };
 		779815BBED7CB1BAE8978869 /* Pods-SendToMeFrameworkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeFrameworkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeFrameworkTests/Pods-SendToMeFrameworkTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7BCC0A1D7C69D389A19C212A /* Pods-SendToMeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests.debug.xcconfig"; sourceTree = "<group>"; };
-		836A1C801C58932800F9034B /* Delayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Delayer.swift; sourceTree = "<group>"; };
-		836A1C831C5897FF00F9034B /* DelayerSpecs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayerSpecs.swift; sourceTree = "<group>"; };
 		836A1C861C5899DA00F9034B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		836A1C8D1C59C11400F9034B /* SendToMeShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SendToMeShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		836A1C8F1C59C11400F9034B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
@@ -241,22 +237,6 @@
 				837E3BDB1C5336E4000A3BCE /* MainViewController.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		836A1C7F1C58931F00F9034B /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				836A1C801C58932800F9034B /* Delayer.swift */,
-			);
-			path = Util;
-			sourceTree = "<group>";
-		};
-		836A1C821C5897EF00F9034B /* Util */ = {
-			isa = PBXGroup;
-			children = (
-				836A1C831C5897FF00F9034B /* DelayerSpecs.swift */,
-			);
-			name = Util;
 			sourceTree = "<group>";
 		};
 		836A1C851C58994600F9034B /* Supporting Files */ = {
@@ -388,7 +368,6 @@
 			children = (
 				836A1CC81C59CE8000F9034B /* SendToMe.entitlements */,
 				836A1C851C58994600F9034B /* Supporting Files */,
-				836A1C7F1C58931F00F9034B /* Util */,
 				836A1C721C587CB600F9034B /* ViewControllers */,
 				837E3BDD1C5336E4000A3BCE /* Main.storyboard */,
 				837E3BD91C5336E4000A3BCE /* AppDelegate.swift */,
@@ -401,7 +380,6 @@
 		837E3BED1C5336E4000A3BCE /* SendToMeTests */ = {
 			isa = PBXGroup;
 			children = (
-				836A1C821C5897EF00F9034B /* Util */,
 				837E3BEE1C5336E4000A3BCE /* SendToMeTests.swift */,
 				837E3BF01C5336E4000A3BCE /* Info.plist */,
 			);
@@ -924,7 +902,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				836A1C811C58932800F9034B /* Delayer.swift in Sources */,
 				837E3BDC1C5336E4000A3BCE /* MainViewController.swift in Sources */,
 				837E3BDA1C5336E4000A3BCE /* AppDelegate.swift in Sources */,
 			);
@@ -935,7 +912,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				837E3BEF1C5336E4000A3BCE /* SendToMeTests.swift in Sources */,
-				836A1C841C5897FF00F9034B /* DelayerSpecs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

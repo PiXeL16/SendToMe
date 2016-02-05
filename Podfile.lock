@@ -7,6 +7,7 @@ PODS:
   - Nimble (3.0.0)
   - ObjectMapper (1.1.1)
   - Quick (0.8.0)
+  - SwiftDelayer (1.0)
   - SwiftMandrill (1.0.2):
     - Alamofire (~> 3.0)
     - ObjectMapper (~> 1.1)
@@ -18,6 +19,7 @@ DEPENDENCIES:
   - LogKit (~> 2.1)
   - Nimble (~> 3.0.0)
   - Quick (~> 0.8.0)
+  - SwiftDelayer
   - SwiftMandrill (~> 1.0.1)
 
 EXTERNAL SOURCES:
@@ -33,6 +35,7 @@ SPEC CHECKSUMS:
   Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
   ObjectMapper: 4143abed1dbd49b73d75092fe8fa1c88ed6434b7
   Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  SwiftDelayer: c2171706bca09af0fdafdb97b458a2c044d3e3e9
   SwiftMandrill: d824a50a4546ce165bf09d61903eaaf35865215a
 
 COCOAPODS: 0.39.0

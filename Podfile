@@ -1,7 +1,6 @@
 platform :ios, '9.0'
 use_frameworks!
 
-
 link_with 'SendToMe' , 'SendToMeShareExtension'
 
 def test_pods
@@ -11,6 +10,7 @@ end
 
 target 'SendToMe' do
   pod 'IBAnimatable'
+  pod 'SwiftDelayer'
   pod 'LogKit', '~> 2.1'
   pod 'IQKeyboardManagerSwift'
 end

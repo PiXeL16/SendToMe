@@ -9,6 +9,7 @@
 import UIKit
 import IBAnimatable
 import SendToMeFramework
+import SwiftDelayer
 
 class MainViewController: UIViewController, UITextFieldDelegate {
     
@@ -81,12 +82,12 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         saveEmailButton.zoomIn { () -> Void in
             
            //Sets the button back to normal
-           Delayer.delay(2.0, closure: { () -> () in
+           Delayer.delay(2.0){
             
                 self.saveEmailButton.squeezeFadeInRight()
                 self.saveEmailButton.setTitle("save_email_title".localized, forState: UIControlState.Normal)
             
-           })
+           }
         }
         
         if let emailText = emailTextField.text{
