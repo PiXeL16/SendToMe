@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import SwiftMandrill
+import SwiftMailgun
 import SendToMeFramework
 
 /// Email builder that will build the email object based on the sharing content
@@ -21,9 +21,9 @@ public class EmailBuilder
      
      - returns: returns email object
      */
-    public class func buildEmailWithSharingContent(sharingContent:ShareContent, comment:String?)->MandrillEmail
+    public class func buildEmailWithSharingContent(sharingContent:ShareContent, comment:String?)->MailgunEmail
     {
-        let emailObject = MandrillEmail()
+        let emailObject = MailgunEmail()
         let emailDataStorage = EmailDataStorage()
         
         var emailSubject = "app_name".localized
@@ -38,14 +38,10 @@ public class EmailBuilder
             emailSubject = comment
         }
         
-        let mandrillTo = MandrillTo(email: emailDataStorage.getEmail())
-        
-        emailObject.to = [mandrillTo]
+        emailObject.to = emailDataStorage.getEmail()
         emailObject.subject = emailSubject
-        emailObject.from = Keys.from_email
-        emailObject.fromName = "app_name".localized
+        emailObject.from = Keys.fromEmail
         emailObject.html = "<i>\(comment!)</i></br>\(sharingContent.url!)"
-        emailObject.text = "\(comment!)\n\(sharingContent.url!)"
         
         return emailObject
     }

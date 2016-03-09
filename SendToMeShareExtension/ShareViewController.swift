@@ -10,7 +10,7 @@ import UIKit
 import Social
 import SendToMeFramework
 import MobileCoreServices
-import SwiftMandrill
+import SwiftMailgun
 
 class ShareViewController: SLComposeServiceViewController {
 
@@ -118,10 +118,11 @@ class ShareViewController: SLComposeServiceViewController {
             
             //Send Email with the email subject information
             
-            let mandrillApi = MandrillAPI(ApiKey: Keys.mandrill_api_key)
             
-            mandrillApi.sendEmail(withEmail: emailObject){
-                mandrillResult in
+            let mailgunApi = MailgunAPI(apiKey: Keys.mailgunApiKey, clientDomain: Keys.clientDomain)
+            
+            mailgunApi.sendEmail(emailObject){
+                mailgunResult in
                 
                 //Complete the dialog
                 self.extensionContext!.completeRequestReturningItems([], completionHandler: nil)

@@ -13,7 +13,10 @@ public struct Keys
 {
     
     public static let keys = SendtomeKeys();
-    public static let mandrill_api_key = keys.mandrill_api_key()
-    public static let from_email = keys.from_email_address()
+    public static let mailgunApiKey = keys.mailgun_api()
+    public static let fromEmail = keys.from_email()
+    
+    public static let clientDomain = "mg.sendtomeapp.com"
+    
     
 }

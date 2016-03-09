@@ -32,7 +32,7 @@ target 'SendToMeFrameworkTests' do
 end
 
 target 'SendToMeShareExtension' do
-    pod 'SwiftMandrill', '~> 1.0.1'
+    pod 'SwiftMailgun'
 end
 
 
@@ -40,6 +40,6 @@ plugin 'cocoapods-keys', {
     :project => "SendToMe",
     :target => "SendToMeShareExtension",
     :keys => [
-        "mandrill_api_key",
-        "from_email_address"
+        "mailgun_api",
+        "from_email"
     ]}
