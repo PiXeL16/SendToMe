@@ -8,11 +8,17 @@ def test_pods
     pod 'Nimble'
 end
 
+def crash_pods
+    pod 'Fabric'
+    pod 'Crashlytics'
+end
+
 target 'SendToMe' do
   pod 'IBAnimatable'
   pod 'SwiftDelayer'
   pod 'LogKit'
   pod 'IQKeyboardManagerSwift'
+  crash_pods
 end
 
 target 'SendToMeTests' do

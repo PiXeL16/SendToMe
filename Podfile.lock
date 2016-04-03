@@ -1,5 +1,8 @@
 PODS:
   - Alamofire (3.3.0)
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - IBAnimatable (2.1)
   - IQKeyboardManagerSwift (4.0.0)
   - Keys (1.0.0)
@@ -13,6 +16,8 @@ PODS:
     - ObjectMapper (~> 1.1)
 
 DEPENDENCIES:
+  - Crashlytics
+  - Fabric
   - IBAnimatable
   - IQKeyboardManagerSwift
   - Keys (from `Pods/CocoaPodsKeys`)
@@ -28,6 +33,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   IBAnimatable: da4ff5a4abba2f2356d9f8a3a23ca6aaf81e80dc
   IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
   Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe

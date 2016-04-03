@@ -509,6 +509,7 @@
 				836A1CBE1C59CA8F00F9034B /* Embed Frameworks */,
 				C0F57C1C6F7356B0803B5625 /* Embed Pods Frameworks */,
 				50B78B61BB7E99B521D2BBB3 /* Copy Pods Resources */,
+				836384DD1CB0CD1D00A6DD88 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -572,7 +573,7 @@
 				TargetAttributes = {
 					836A1C8C1C59C11400F9034B = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = WEENFV7RVZ;
+						DevelopmentTeam = 7JMURSKQQ8;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -588,7 +589,7 @@
 					};
 					837E3BD51C5336E4000A3BCE = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = WEENFV7RVZ;
+						DevelopmentTeam = 7JMURSKQQ8;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -787,6 +788,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		836384DD1CB0CD1D00A6DD88 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3160fd05c86b98a455a64fa5c6cb284df7829cd0 4dc21e46dbfa26147a0e0c3cf9abd210d060a8c8bebb5cfc50210ae16ef41d45";
 		};
 		860A5E7162D5F1982326A7EE /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -997,7 +1011,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SendToMeShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtomeapp.SendToMeShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtome.SendToMeShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -1015,7 +1029,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SendToMeShareExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtomeapp.SendToMeShareExtension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtome.SendToMeShareExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
@@ -1181,7 +1195,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SendToMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtomeapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -1198,7 +1212,7 @@
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = SendToMe/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtomeapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenpixels.sendtome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

@@ -9,6 +9,9 @@
 import UIKit
 import LogKit
 import IQKeyboardManagerSwift
+import Fabric
+import Crashlytics
+
 
 // Logger for the App instead of print
 let log = LXLogger()
@@ -22,9 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
-         IQKeyboardManager.sharedManager().enable = true
-         IQKeyboardManager.sharedManager().enableAutoToolbar = false
+        IQKeyboardManager.sharedManager().enable = true
+        IQKeyboardManager.sharedManager().enableAutoToolbar = false
         
+        Fabric.with([Crashlytics.self])
+
         return true
     }
 
