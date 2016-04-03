@@ -1,12 +1,12 @@
 PODS:
-  - Alamofire (3.2.1)
-  - IBAnimatable (1.2)
+  - Alamofire (3.3.0)
+  - IBAnimatable (2.1)
   - IQKeyboardManagerSwift (4.0.0)
   - Keys (1.0.0)
   - LogKit (2.2.0)
-  - Nimble (3.0.0)
-  - ObjectMapper (1.1.5)
-  - Quick (0.8.0)
+  - Nimble (3.2.0)
+  - ObjectMapper (1.2.0)
+  - Quick (0.9.1)
   - SwiftDelayer (1.0.2)
   - SwiftMailgun (0.0.1):
     - Alamofire (~> 3.0)
@@ -16,9 +16,9 @@ DEPENDENCIES:
   - IBAnimatable
   - IQKeyboardManagerSwift
   - Keys (from `Pods/CocoaPodsKeys`)
-  - LogKit (~> 2.1)
-  - Nimble (~> 3.0.0)
-  - Quick (~> 0.8.0)
+  - LogKit
+  - Nimble
+  - Quick
   - SwiftDelayer
   - SwiftMailgun
 
@@ -27,14 +27,14 @@ EXTERNAL SOURCES:
     :path: Pods/CocoaPodsKeys
 
 SPEC CHECKSUMS:
-  Alamofire: f11d8624a05f5d39e0c99309b3e600a3ba64298a
-  IBAnimatable: bcebfaf34b041949da5ed668ac5ab2e28a4b2357
+  Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
+  IBAnimatable: da4ff5a4abba2f2356d9f8a3a23ca6aaf81e80dc
   IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
   Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
   LogKit: 0b2f79d8dc915e5f361b31de46c27c647b86018b
-  Nimble: 4c353d43735b38b545cbb4cb91504588eb5de926
-  ObjectMapper: 528b1a6677a6acac7747edd508576983e76a9148
-  Quick: 563d0f6ec5f72e394645adb377708639b7dd38ab
+  Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d
+  ObjectMapper: b1e9c7c8a9f6400b72690c80072c131504caa66f
+  Quick: a5221fc21788b6aeda934805e68b061839bc3165
   SwiftDelayer: 555c09edc3a5af5e778052c3a489283eb894da6c
   SwiftMailgun: 4a34df3bf992f4aea9b37539be5b8932a642466b
 
