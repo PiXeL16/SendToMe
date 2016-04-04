@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		01DB69328D8E17F27FE909BD /* Pods_SendToMe.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0512235FCBA0183A05F9E7 /* Pods_SendToMe.framework */; };
 		7C293C38BBFA13949AA208E0 /* Pods_SendToMeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C6795B939050CFD92DAEC64 /* Pods_SendToMeTests.framework */; };
+		833584B11CB324AE0064D6E7 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833584B01CB324AE0064D6E7 /* MainViewController.swift */; };
 		836A1C871C5899DA00F9034B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 836A1C861C5899DA00F9034B /* Localizable.strings */; };
 		836A1C901C59C11400F9034B /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1C8F1C59C11400F9034B /* ShareViewController.swift */; };
 		836A1C931C59C11400F9034B /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 836A1C911C59C11400F9034B /* MainInterface.storyboard */; };
@@ -28,7 +29,6 @@
 		836A1CDC1C5D7AF600F9034B /* StringExtensionSpecs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CDB1C5D7AF600F9034B /* StringExtensionSpecs.swift */; };
 		836A1CDF1C5D7CB100F9034B /* EmailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836A1CDE1C5D7CB100F9034B /* EmailBuilder.swift */; };
 		837E3BDA1C5336E4000A3BCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BD91C5336E4000A3BCE /* AppDelegate.swift */; };
-		837E3BDC1C5336E4000A3BCE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837E3BDB1C5336E4000A3BCE /* MainViewController.swift */; };
 		837E3BDF1C5336E4000A3BCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E3BDD1C5336E4000A3BCE /* Main.storyboard */; };
 		837E3BE11C5336E4000A3BCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837E3BE01C5336E4000A3BCE /* Assets.xcassets */; };
 		837E3BE41C5336E4000A3BCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837E3BE21C5336E4000A3BCE /* LaunchScreen.storyboard */; };
@@ -120,6 +120,7 @@
 		3BF62ECFB9621B4013A105CC /* Pods-SendToMeFrameworkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeFrameworkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeFrameworkTests/Pods-SendToMeFrameworkTests.release.xcconfig"; sourceTree = "<group>"; };
 		3F1A1092DB6E4A12BEE91D03 /* Pods-SendToMeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMeTests/Pods-SendToMeTests.release.xcconfig"; sourceTree = "<group>"; };
 		568E9FF13A491A3E9768120F /* Pods-SendToMe.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SendToMe.release.xcconfig"; path = "Pods/Target Support Files/Pods-SendToMe/Pods-SendToMe.release.xcconfig"; sourceTree = "<group>"; };
+		833584B01CB324AE0064D6E7 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = SendToMe/MainViewController.swift; sourceTree = SOURCE_ROOT; };
 		836A1C861C5899DA00F9034B /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		836A1C8D1C59C11400F9034B /* SendToMeShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SendToMeShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		836A1C8F1C59C11400F9034B /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
@@ -142,7 +143,6 @@
 		836A1CDE1C5D7CB100F9034B /* EmailBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailBuilder.swift; sourceTree = "<group>"; };
 		837E3BD61C5336E4000A3BCE /* SendToMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SendToMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837E3BD91C5336E4000A3BCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		837E3BDB1C5336E4000A3BCE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ../MainViewController.swift; sourceTree = "<group>"; };
 		837E3BDE1C5336E4000A3BCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		837E3BE01C5336E4000A3BCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837E3BE31C5336E4000A3BCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -219,7 +219,7 @@
 		836A1C721C587CB600F9034B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				837E3BDB1C5336E4000A3BCE /* MainViewController.swift */,
+				833584B01CB324AE0064D6E7 /* MainViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -916,8 +916,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837E3BDC1C5336E4000A3BCE /* MainViewController.swift in Sources */,
 				837E3BDA1C5336E4000A3BCE /* AppDelegate.swift in Sources */,
+				833584B11CB324AE0064D6E7 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
