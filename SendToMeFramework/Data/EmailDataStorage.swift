@@ -11,7 +11,7 @@ import Foundation
 /// Simple data storage using NSUserDefault to store the email value set
 public struct EmailDataStorage {
     
-    let defaults = NSUserDefaults.init(suiteName: "group.com.greenpixels.sendtomeapp")
+    let defaults = NSUserDefaults.init(suiteName: "group.com.greenpixels.sendtome")
     
     public init(){}
     
