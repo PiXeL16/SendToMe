@@ -445,8 +445,8 @@
 				836A1C891C59C11400F9034B /* Sources */,
 				836A1C8A1C59C11400F9034B /* Frameworks */,
 				836A1C8B1C59C11400F9034B /* Resources */,
-				6776E9451E912043A6CCC660 /* Embed Pods Frameworks */,
 				B7881AB2B89A14C8E3CBFD8F /* Copy Pods Resources */,
+				83B4443E1CB384C5003D52B0 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -744,21 +744,6 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6776E9451E912043A6CCC660 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SendToMeShareExtension/Pods-SendToMeShareExtension-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		70600FA460391D9145754A95 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,6 +786,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Fabric/run\" 3160fd05c86b98a455a64fa5c6cb284df7829cd0 4dc21e46dbfa26147a0e0c3cf9abd210d060a8c8bebb5cfc50210ae16ef41d45";
+		};
+		83B4443E1CB384C5003D52B0 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"${CONFIGURATION_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/\"\nif [[ -d \"Frameworks\" ]]; then\nrm -fr Frameworks\nfi";
 		};
 		860A5E7162D5F1982326A7EE /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

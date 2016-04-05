@@ -3,8 +3,8 @@ PODS:
   - Crashlytics (3.7.0):
     - Fabric (~> 1.6.3)
   - Fabric (1.6.7)
-  - IBAnimatable (2.1)
-  - IQKeyboardManagerSwift (4.0.0)
+  - IBAnimatable (2.2)
+  - IQKeyboardManagerSwift (4.0.1)
   - Keys (1.0.0)
   - LogKit (2.2.0)
   - Nimble (3.2.0)
@@ -35,8 +35,8 @@ SPEC CHECKSUMS:
   Alamofire: 9054db4a1b1ca9e363223183e01cea380159a27c
   Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
   Fabric: caf7580c725e64db144f610ac65cd60956911dc7
-  IBAnimatable: da4ff5a4abba2f2356d9f8a3a23ca6aaf81e80dc
-  IQKeyboardManagerSwift: ede2a27b4e1ce053d03073b9c7fa439322f5e405
+  IBAnimatable: 41ddf0b307ebec241d5dd510f472c51fb7fe519b
+  IQKeyboardManagerSwift: e92246955e21dad73ad9dc89b80adb134d8bb395
   Keys: 7d2ff6ff42f6903358267ce56e9392f83c31acfe
   LogKit: 0b2f79d8dc915e5f361b31de46c27c647b86018b
   Nimble: 703854335d181df169bbca9c97117b5cf8c47c1d

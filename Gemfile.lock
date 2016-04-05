@@ -30,7 +30,8 @@ GEM
       activesupport (>= 4.0.2)
       fuzzy_match (~> 2.0.4)
       nap (~> 1.0)
-    cocoapods-deintegrate (1.0.0.beta.1)
+    cocoapods-deintegrate (0.2.1)
+      cocoapods (~> 0.34)
     cocoapods-downloader (0.9.3)
     cocoapods-keys (1.6.0)
       dotenv
@@ -44,7 +45,7 @@ GEM
       netrc (= 0.7.8)
     cocoapods-try (0.5.1)
     colored (1.2)
-    dotenv (2.0.2)
+    dotenv (2.1.1)
     escape (0.0.4)
     fuzzy_match (2.0.4)
     i18n (0.7.0)

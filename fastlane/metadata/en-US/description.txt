@@ -1,0 +1,11 @@
+Send content to your email with a single tap.
+
+Send to Me let you easily send content with your email with a single tap. The next time you find an article, video or link you want to read or watch later, just Send it to Me.
+
+Why?
+
+If I find something interesting that I want to read later, I send an email about it. It goes into my TODO for the next day and I read it. Also, something in my email has more presence that something in a random app that I don't open as much, meaning that I will definitely get to read it and cross it out of my TODO list.
+
+After installing the Send To Me App and setting your email, just tap on the share button of any app or website and use the Share Extension to send it to your email.
+
+Send to Me is fully open sourced. PRs are welcome. https://github.com/PiXeL16/SendToMe

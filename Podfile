@@ -18,6 +18,7 @@ target 'SendToMe' do
   pod 'SwiftDelayer'
   pod 'LogKit'
   pod 'IQKeyboardManagerSwift'
+  pod 'SwiftMailgun'
   crash_pods
 end
 
