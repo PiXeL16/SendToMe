@@ -13,13 +13,21 @@ def crash_pods
     pod 'Crashlytics'
 end
 
+def development_pods
+    pod 'IBAnimatable'
+    pod 'SwiftDelayer'
+    pod 'LogKit'
+    pod 'IQKeyboardManagerSwift'
+end
+
+def email_pods
+    pod 'SwiftMailgun'
+end
+
 target 'SendToMe' do
-  pod 'IBAnimatable'
-  pod 'SwiftDelayer'
-  pod 'LogKit'
-  pod 'IQKeyboardManagerSwift'
-  pod 'SwiftMailgun'
-  crash_pods
+    development_pods
+    email_pods
+    crash_pods
 end
 
 target 'SendToMeTests' do
@@ -35,17 +43,17 @@ target 'SendToMeFramework' do
 end
 
 target 'SendToMeFrameworkTests' do
-     test_pods
+    test_pods
 end
 
 target 'SendToMeShareExtension' do
-    pod 'SwiftMailgun'
+    email_pods
 end
 
 
 plugin 'cocoapods-keys', {
     :project => "SendToMe",
-    :target => "SendToMeShareExtension",
+    :target => "SendToMe",
     :keys => [
         "mailgun_api",
         "from_email"

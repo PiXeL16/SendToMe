@@ -118,8 +118,10 @@ class ShareViewController: SLComposeServiceViewController {
             
             //Send Email with the email subject information
             
+            //Gey keys from data Storage and use them to send the email
+            let keysData = KeysDataStorage()
             
-            let mailgunApi = MailgunAPI(apiKey: Keys.mailgunApiKey, clientDomain: Keys.clientDomain)
+            let mailgunApi = MailgunAPI(apiKey: keysData.getMailgunApiKey(), clientDomain: keysData.getClientDomain())
             
             mailgunApi.sendEmail(emailObject){
                 mailgunResult in

@@ -29,6 +29,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         
         //Shows the email info if available
         showEmailInfo()
+        saveInitialSettings();
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -52,6 +53,15 @@ class MainViewController: UIViewController, UITextFieldDelegate {
             stackView.shake()
 
         }
+    }
+    
+    
+    private func saveInitialSettings(){
+        
+        let keysData = KeysDataStorage();
+        
+        keysData.saveMailgunApiKey(Keys.mailgunApiKey)
+        keysData.saveClientDomainKey(Keys.clientDomain)
     }
     
     /**

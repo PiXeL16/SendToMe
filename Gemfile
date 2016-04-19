@@ -11,3 +11,6 @@ gem 'label'
 
 # A CocoaPods plugin to remove and de-intergrate CocoaPods from your project.
 gem 'cocoapods-deintegrate'
+
+# Add Fastlane for deployment and general awesomeness
+gem 'fastlane'

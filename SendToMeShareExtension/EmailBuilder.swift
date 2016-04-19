@@ -40,7 +40,7 @@ public class EmailBuilder
         
         emailObject.to = emailDataStorage.getEmail()
         emailObject.subject = emailSubject
-        emailObject.from = "Send to Me <\(Keys.fromEmail)>"
+        emailObject.from = "Send to Me <sendtome@mg.sendtomeapp.com>"
         emailObject.html = "<i>\(comment!)</i></br>\(sharingContent.url!)"
         
         return emailObject
