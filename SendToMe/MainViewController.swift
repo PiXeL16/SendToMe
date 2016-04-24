@@ -58,9 +58,12 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     
     private func saveInitialSettings(){
         
+        log.debug("Saving initial settings")
         let keysData = KeysDataStorage();
         
+        log.debug("Save mailgun api key")
         keysData.saveMailgunApiKey(Keys.mailgunApiKey)
+        log.debug("Save client domain path")
         keysData.saveClientDomainKey(Keys.clientDomain)
     }
     
