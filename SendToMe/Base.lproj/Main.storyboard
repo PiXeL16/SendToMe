@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Send to Me-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="SendToMe" customModuleProvider="target" sceneMemberID="viewController">
@@ -78,7 +78,7 @@
                             <constraint firstItem="Spe-kA-uRM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v77-en-bhC"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="hJL-Ag-krz">
+                    <navigationItem key="navigationItem" title="Send to Me" id="hJL-Ag-krz">
                         <barButtonItem key="rightBarButtonItem" image="ic_info" id="Yag-Oe-PXH"/>
                     </navigationItem>
                     <connections>
@@ -101,6 +101,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0TW-iF-oWg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.2784313725" green="0.52549019610000003" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
