@@ -104,6 +104,17 @@ public struct KeysDataStorage {
         return !getClientDomain().isEmpty
     }
     
+    /**
+     Clear the value of the email in the storage
+     */
+    public func clearClientDomain()
+    {
+        
+        defaults?.removeObjectForKey(StorageKeys.mailgunApiKey)
+        
+        print("client domain API cleared")
+    }
+    
     
     
 }

@@ -14,9 +14,10 @@ import SendToMeFramework
 class KeysDataStorageSpecs: QuickSpec {
     
     override func spec() {
-
+        
         let keysStorage = KeysDataStorage()
         let apiKey = "testest1234"
+        let domain = "testtest.com"
         
         it("save and gets api key succesfully"){
             
@@ -29,18 +30,17 @@ class KeysDataStorageSpecs: QuickSpec {
             keysStorage.clearMailgunKey()
         }
         
-//        it("clear saved email succesfuly")
-//        {
-//            
-//            emailStorage.saveEmail(email)
-//            
-//            expect(emailStorage.hasEmailSaved).to(beTruthy())
-//            
-//            emailStorage.clearEmail()
-//            
-//            expect(emailStorage.hasEmailSaved).to(beFalsy())
-//        }
-        
+        it("saves and gets domain succesfully")
+        {
+            
+            keysStorage.saveClientDomainKey(domain)
+            
+            expect(keysStorage.hasClientDomainSaved).to(beTruthy())
+            expect(keysStorage.getClientDomain()).to(equal(domain))
+            
+            keysStorage.clearClientDomain()
+            
+        }
         
     }
     

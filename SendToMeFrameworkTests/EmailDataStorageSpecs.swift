@@ -29,8 +29,7 @@ class EmailDataStorageSpecs: QuickSpec {
             emailStorage.clearEmail()
         }
         
-        it("clear saved email succesfuly")
-            {
+        it("clear saved email succesfuly"){
                 
                 emailStorage.saveEmail(email)
                 
