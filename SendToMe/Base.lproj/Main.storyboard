@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -18,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCircular" translatesAutoresizingMaskIntoConstraints="NO" id="Spe-kA-uRM" customClass="AnimatableImageView" customModule="IBAnimatable">
-                                <rect key="frame" x="210" y="80" width="180" height="180"/>
+                                <rect key="frame" x="225" y="80" width="150" height="150"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="180" id="6YT-Wt-uCq"/>
-                                    <constraint firstAttribute="width" constant="180" id="qeo-Tt-8JR"/>
+                                    <constraint firstAttribute="height" constant="150" id="6YT-Wt-uCq"/>
+                                    <constraint firstAttribute="width" constant="150" id="qeo-Tt-8JR"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="animationType" value="Pop"/>
@@ -34,7 +35,7 @@
                                 </userDefinedRuntimeAttributes>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="WaU-kk-62g" customClass="AnimatableStackView" customModule="IBAnimatable">
-                                <rect key="frame" x="160" y="290" width="280" height="70"/>
+                                <rect key="frame" x="160" y="260" width="280" height="70"/>
                                 <subviews>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Your email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gIs-lV-Raa">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
@@ -79,7 +80,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hJL-Ag-krz">
-                        <barButtonItem key="rightBarButtonItem" image="ic_info" id="Yag-Oe-PXH">
+                        <barButtonItem key="rightBarButtonItem" image="information" id="Yag-Oe-PXH">
                             <connections>
                                 <segue destination="eWd-03-WJ2" kind="show" id="Dfh-9Z-hkv"/>
                             </connections>
@@ -97,10 +98,10 @@
             </objects>
             <point key="canvasLocation" x="1117" y="389"/>
         </scene>
-        <!--About Table View Controller-->
+        <!--Help Table View Controller-->
         <scene sceneID="lSB-c5-ICm">
             <objects>
-                <tableViewController id="eWd-03-WJ2" customClass="AboutTableViewController" customModule="SendToMe" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="eWd-03-WJ2" customClass="HelpTableViewController" customModule="SendToMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="XOR-tJ-STH">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -144,6 +145,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="s7i-q3-QI1" kind="show" id="AXQ-Kh-0CH"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="nTu-Yw-Q13" style="IBUITableViewCellStyleDefault" id="1f6-N4-1cb">
                                         <rect key="frame" x="0.0" y="201.5" width="600" height="44"/>
@@ -234,8 +238,7 @@
         <!--Help-->
         <scene sceneID="vTh-Gh-Ta8">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ab1-TI-ZiY" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController title="Help" id="Iao-mb-Fvw" sceneMemberID="viewController">
+                <tableViewController title="Help" id="Iao-mb-Fvw" customClass="HelpTableViewController" customModule="SendToMe" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZJr-eT-bIy">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -290,11 +293,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="2) Go to any app that has a share functionality (Safari, Twitter, Etc)." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2R9-LZ-Mfu">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2R9-LZ-Mfu">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="2) Go to any app that has a ">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="share">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" functionality (Safari, Twitter, Etc).">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -307,11 +331,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="3) Add the Send to Me Share Extension to the list. (If not there yet)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o7m-rK-EJo">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="o7m-rK-EJo">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="3) Add the ">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="Send to Me">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" Share Extension to the list. (If not there yet)">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -324,11 +369,32 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="4) Tap on the Send to Me icon." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fg3-Pu-gGS">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fg3-Pu-gGS">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <attributedString key="attributedText">
+                                                        <fragment content="4) Tap on the ">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content="Send to Me">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue-Bold"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                        <fragment content=" icon.">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                                <font key="NSFont" size="16" name="HelveticaNeue"/>
+                                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
@@ -341,7 +407,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="5) You will receive an email with your content in no time." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5VN-j1-vna">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="5) You will receive an 📧 with your content in no time." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5VN-j1-vna">
                                                     <rect key="frame" x="15" y="0.0" width="570" height="44"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -377,12 +443,107 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ab1-TI-ZiY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2687" y="397"/>
+            <point key="canvasLocation" x="2660" y="919"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="wHO-Rz-X9s">
+            <objects>
+                <viewController title="About" id="s7i-q3-QI1" customClass="AboutViewController" customModule="SendToMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HEy-PL-pXs"/>
+                        <viewControllerLayoutGuide type="bottom" id="lZd-hO-c1M"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xNk-ir-pHr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logoCircular" translatesAutoresizingMaskIntoConstraints="NO" id="pEk-lr-Sq1">
+                                <rect key="frame" x="273" y="72" width="55" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="55" id="4gc-K3-yUt"/>
+                                    <constraint firstAttribute="height" constant="56" id="DSp-ie-HgW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2016 Green Pixels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2OT-ad-vkf">
+                                <rect key="frame" x="231" y="226.5" width="138" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HfX-iJ-lDB"/>
+                                    <constraint firstAttribute="width" constant="138" id="V0y-K8-sb7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rMJ-Up-tH4">
+                                <rect key="frame" x="20" y="181" width="560" height="35.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Send to Me ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="is brought to you by Chris Jimenez, a solo developer passioned about Open Source Software and Technology.">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="15" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="geD-qQ-B9R">
+                                <rect key="frame" x="236" y="256" width="129" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="129" id="n1v-fT-FZn"/>
+                                    <constraint firstAttribute="height" constant="21" id="z59-55-k6T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send to Me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2z3-fU-BAQ">
+                                <rect key="frame" x="252" y="146" width="97" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="BGI-DQ-okd"/>
+                                    <constraint firstAttribute="width" constant="97" id="q6g-ML-7RZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="geD-qQ-B9R" firstAttribute="top" secondItem="2OT-ad-vkf" secondAttribute="bottom" constant="8" id="AlG-6g-GmS"/>
+                            <constraint firstItem="rMJ-Up-tH4" firstAttribute="top" secondItem="2z3-fU-BAQ" secondAttribute="bottom" constant="13" id="GZl-Hq-izG"/>
+                            <constraint firstItem="2z3-fU-BAQ" firstAttribute="centerX" secondItem="xNk-ir-pHr" secondAttribute="centerX" id="NiZ-rH-7Q9"/>
+                            <constraint firstItem="pEk-lr-Sq1" firstAttribute="centerX" secondItem="xNk-ir-pHr" secondAttribute="centerX" id="OyN-HY-WHa"/>
+                            <constraint firstItem="2z3-fU-BAQ" firstAttribute="top" secondItem="pEk-lr-Sq1" secondAttribute="bottom" constant="18" id="UJY-tW-a3q"/>
+                            <constraint firstItem="rMJ-Up-tH4" firstAttribute="leading" secondItem="xNk-ir-pHr" secondAttribute="leadingMargin" id="Zc7-se-lbK"/>
+                            <constraint firstItem="rMJ-Up-tH4" firstAttribute="trailing" secondItem="xNk-ir-pHr" secondAttribute="trailingMargin" id="fTb-Xk-mN1"/>
+                            <constraint firstItem="pEk-lr-Sq1" firstAttribute="top" secondItem="HEy-PL-pXs" secondAttribute="bottom" constant="8" id="fbk-I6-RFz"/>
+                            <constraint firstItem="2OT-ad-vkf" firstAttribute="top" secondItem="rMJ-Up-tH4" secondAttribute="bottom" constant="10" id="jRZ-aH-YxF"/>
+                            <constraint firstItem="geD-qQ-B9R" firstAttribute="centerX" secondItem="xNk-ir-pHr" secondAttribute="centerX" id="ngn-7E-Dge"/>
+                            <constraint firstItem="rMJ-Up-tH4" firstAttribute="centerX" secondItem="xNk-ir-pHr" secondAttribute="centerX" id="oxt-Qz-nCL"/>
+                            <constraint firstItem="2OT-ad-vkf" firstAttribute="centerX" secondItem="xNk-ir-pHr" secondAttribute="centerX" id="rbM-T8-GKj"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="versionLabel" destination="geD-qQ-B9R" id="zb9-6S-21J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAH-GI-bLk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2660" y="214"/>
         </scene>
     </scenes>
     <resources>
-        <image name="ic_info" width="24" height="24"/>
+        <image name="information" width="22" height="22"/>
         <image name="logoCircular" width="450" height="449"/>
     </resources>
     <color key="tintColor" red="0.27843137254901962" green="0.52549019607843139" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
