@@ -7,13 +7,15 @@ Share content to your email with a single tap.
 
 `Send to Me` let you easily share content with your email with a `Share Extension`
 
+[![DownloadAppStore](http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg)](https://geo.itunes.apple.com/us/app/send-to-me-send-content-to/id1100027787?mt=8)
+
 ## Why?
 I personally use my email to handle my `TODO`. If I find something interesting that I want to read later, I send an email about it. It goes into my `TODO` for the next day and I read it.
 For me, also, something in my email has more presence that something in a random app that I don't open as much.
 
 Yes I know that there is such things like `Pocket` or `Safari Reading List` but I don't use them for reasons...(Like for example that I don't use `Safari` as my main browser at my computer).
 
-<a href="https://geo.itunes.apple.com/us/app/send-to-me-send-content-to/id1100027787?mt=8" style="display:inline-block;overflow:hidden;background:url(http://linkmaker.itunes.apple.com/images/badges/en-us/badge_appstore-lrg.svg) no-repeat;width:165px;height:40px;"></a>
+
 
 
 <img src="Web/IphoneSideSplash.png" height="500">
